@@ -1,3 +1,3 @@
 function funnyclick() {
-    console.log("fart")
+    alert("fart")
 }
