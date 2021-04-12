@@ -1,0 +1,325 @@
+
+
+
+<!DOCTYPE html>
+<html lang="nl-NL"><head>
+<!-- <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" /> -->
+<!-- <link rel="preconnect" href="https://cmp.choice.faktor.io"> -->
+<link rel="preconnect" href="https://massariuscdn.com">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com/">
+<!-- <link rel="preconnect" href="https://cdn.jsdelivr.net"> -->
+<!-- <link rel="preconnect" href="https://www.google-analytics.com"> -->
+<!-- <script async src="https://www.google-analytics.com"></script> -->
+<!-- <link rel="preconnect" href="https://ib.adnxs.com"> -->
+<meta name="msvalidate.01" content="85DE95499808A99687D5AA7168A51747">
+<meta name="googlebot" content="NOODP">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta name="google" content="notranslate">
+<meta name="apple-itunes-app" content="app-id=520828337">
+<link rel="apple-touch-icon" href="/i/mobiellogo.png">
+<link rel="canonical" href="https://www.nederland.fm">
+<title>Nederland.FM => Online luisteren naar de beste radio stations</title><script type="text/javascript">var url_z = "";</script><meta name="keywords" content="nederland, fm, radio, online, gratis, muziek, luisteren, webradio, horen, frequentie, zender, radiostation, hits">
+<meta name="description" content="Online, live en gratis radio luisteren naar onder andere Radio 538, Qmusic, Sky Radio, Radio 1, Radio 2, 3FM, Radio 10, Veronica, Slam en BNR.">
+<meta property="og:url" content="https://www.nederland.fm" />
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Nederland.FM => Online luisteren naar de beste radio stations" />
+<meta property="og:description" content="Online, live en gratis radio luisteren naar onder andere Radio 538, Qmusic, Sky Radio, Radio 1, Radio 2, 3FM, Radio 10, Veronica, Slam en BNR." />
+<meta property="og:image" content="https://www.nederland.fm/i/nlfm_ogimage_300x300.gif" />
+<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2192704-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-2192704-6',{'anonymize_ip': true});
+</script>
+<script>var do_ilo = 0;var preroll=0;</script><link type="text/css" rel="stylesheet" href="/common/dojo-1.8/release-fm/dojo/fm/css/fm2.css" /><script  type="text/javascript" src="/common/radio/zenders/nederland.js"></script><script type="text/javascript" src="/common/dojo-1.8/release-fm/dojo/dojo/dojo.js" djConfig="parseOnLoad: false,locale:'nl'"></script><script  type="text/javascript" src="/common/dojo-1.8/release-fm/dojo/dojo/dojo-nederlandfm2.js" ></script><script type="text/javascript">
+OpFM=0;
+window.google_analytics_uacct="UA-2192704-6";
+preroll=1;livebanners=1;livefb=0;livelb=1;livezijb=0;livelb_id='div-gpt-ad-1584614643143-0';
+banner_timer=0;
+banner_time=15*60*1000;
+html5=0;checkChrome=0;
+var _gaq=_gaq||[];
+function loadDojo(){
+ dojo.require("fm.baseNL");
+}
+function PreloaderCallbackAfter(ad, id){
+radio.prerollFinished();
+}
+function qmusic(b){
+radio.play('q-music');
+dojo.publish('/analytics/banner', ['QMusic_' + b + '_Kliks']);
+//setTimeout('window.open("https://qmusic.nl/acties/het-geluid-2020?utm_source=nederlandfm&utm_medium=display&utm_campaign=hetgeluid2020", "_blank")',3000);
+}
+function veronicafm(b){
+radio.play('veronicafm');
+dojo.publish('/analytics/banner', ['RadioVeronica_' + b + '_Kliks']);
+}
+function skyradio(b){
+radio.play('skyradio');
+dojo.publish('/analytics/banner', ['SkyRadio_' + b + '_Kliks']);
+}
+function radio10(b){
+radio.play('radio10');
+dojo.publish('/analytics/banner', ['radio10_' + b + '_Kliks']);
+}
+function pnl(b){
+radio.play('100pnl');
+dojo.publish('/analytics/banner', ['100pnl_' + b + '_Kliks']);
+}
+function radio538(b){
+radio.play('radio538');
+//alert('Radio538_' + b + '_Kliks');
+dojo.publish('/analytics/banner', ['Radio538_' + b + '_Kliks']);
+}
+function top50(b){
+  radio.play('538top50');
+  //alert('Radio538_' + b + '_Kliks');
+  dojo.publish('/analytics/banner', ['538_Top50' + b + '_Kliks']);
+  }
+function slamfm(b){
+radio.play('slamfm');
+dojo.publish('/analytics/banner', ['SlamFM_' + b + '_Kliks']);
+}
+function bnr(b){
+radio.play('bnr');
+dojo.publish('/analytics/banner', ['BNR_' + b + '_Kliks']);
+window.open("https://cxg3g.app.goo.gl/7ZPX", "BNR");
+}
+var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+var eventer = window[eventMethod];
+var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+eventer(messageEvent,function(e) {
+  //alert(e.data);
+  if (typeof e.data.indexOf != "undefined") {
+    if(e.data.indexOf("qmusic") != -1) {
+	    qmusic();
+      }  
+      if(e.data.indexOf("headerBidding") != -1) {     
+          var zenderWisselEvent = new CustomEvent("zenderWissel", {});
+	        document.getElementById("div-gpt-ad-1584614643143-0").innerHTML = "";
+	        googletag.cmd.push(function() {googletag.display('div-gpt-ad-1584614643143-0'); });
+	        window.dispatchEvent(zenderWisselEvent);
+      }    
+      if(e.data.indexOf("veronicafm") != -1) { veronicafm('LiveBanner'); }  
+      if(e.data.indexOf("startskyradio") != -1) {
+	      skyradio(); 
+	      //setTimeout('window.open("https://www.skyradio.nl/duizend-euro-dubbelhit", "_blank")',3000);	
+	    }
+      if(e.data.indexOf("skysummerhits") != -1) { skysummerhits('LiveBanner'); }
+      if(e.data.indexOf("startradioveronica") != -1) { veronicafm('LiveBanner'); }
+      if(e.data.indexOf("radio538") != -1) {  radio538('LiveBanner'); }
+      if(e.data.indexOf("startradio10") != -1) {  radio10('LiveBanner');  }
+      if(e.data.indexOf("stopmusic") != -1) {
+        var qplayer = '<div class="playertitle"><img id="titleImg" src="/i/titelplayer.gif" width="300" height="30"></div><img alt="QMusic" src="/i/banners/hetgeluidbanner.gif" id="radioBanner" width="300" height="93" border="0">';
+	      document.getElementById('zender_page').innerHTML = qplayer;
+      }
+	  }
+},false);
+ window.addEventListener("beforeunload", function(event) {
+   stats.playerStop();
+   console.log("UNLOAD:1");
+ });
+function getWindowWidth(){
+var winWidth=0;
+if(document.documentElement && (document.documentElement.clientWidth||document.documentElement.clientHeight)){
+winWidth=document.documentElement.clientWidth;
+}else if(document.body && (document.body.clientWidth||document.body.clientHeight)){
+winWidth=document.body.clientWidth;
+}else if(typeof(window.innerWidth)=='number'){
+winWidth=window.innerWidth;
+}return winWidth;}
+var ww=getWindowWidth();
+var takeoverWidth=300;
+</script>
+<style>
+#div-gpt-ad-1584614643143-0{
+position:relative;
+left:5px;
+top:-7px;
+width:728px;
+height:90px;
+}
+</style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '802158809894645');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=802158809894645&ev=PageView&noscript=1"/>
+</noscript>
+</head>
+<body  class="tundra" onload="loadDojo()">
+	<img  style="padding:0px;margin-top:8px;display:block;font-szie:1px" src="/i/Nederland-FM-Radio-Luisteren.gif" alt="Nederland.FM => Online luisteren naar de beste radio stations" vspace="0" width="900" height="1">
+<div id="takeoverleft" style="cursor: pointer; z-index: 1;position: fixed !important;top: 50px !important;text-align: right !important;left: 158px !important;">
+<!-- /13436254/NLFM_ROS_LEFT_HIGH_ATF -->
+<div id='div-gpt-ad-1512037844968-0'>
+<!-- <script>
+googletag.cmd.push(function() {googletag.display('div-gpt-ad-1512037844968-0'); });
+</script> -->
+</div>
+</div>
+<div id="takeoverright" style="cursor: pointer; border: 0px; z-index: 1; position: fixed !important; top: 50px !important; left: 1445px !important;">
+<!-- /13436254/NLFM_ROS_RIGHT_HIGH_ATF -->
+<div id='div-gpt-ad-1512037844968-2'>
+<!-- <script>
+googletag.cmd.push(function() {googletag.display('div-gpt-ad-1512037844968-2'); });
+</script> -->
+</div>
+</div>
+<div id="xfr">
+<div id="xh">
+<div id="xhl"><span style=""><a onClick="dojo.publish('/analytics/banner', ['Leaseweb']);" href="http://www.leaseweb.com" target="_blank" rel="noreferrer"><img  src="/i/leaseweb.gif" width="120" height="20"   alt="LeaseWeb" title"LeaseWeb biedt hosted infrastructuur oplossingen, waaronder traditionele dedicated servers, cloud, colocatie en maatwerk hybride oplossingen"></a></span></span></div><div id="xhm"><img class="flagLImg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="224" height="20"><a href="http://www.nederland.fm" title="Nederland.FM - Radio luisteren via internet. De beste radiostations bij elkaar! rel="noreferrer"><img class="flagLImg" alt="Nederland.FM - Radio luisteren via internet. De beste radiostations bij elkaar!" src="/common/radio/i/v/zwartevlag.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['Belgie.FM']);" href="http://www.belgie.fm" target="_blank" rel="noreferrer" title="Belgie.FM - Radio luisteren via internet, klikken en luisteren"><img class="flagLImg" alt="Belgie.FM - Radio luisteren via internet, klikken en luisteren" src="/common/radio/i/v/flagbelgie.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['Deutschland.FM']);" href="http://www.deutschland.fm" target="_blank" rel="noreferrer" title="Deutschland.FM - Online Radio, Klicken und H&ouml;ren"><img class="flagLImg" alt="Deutschland.FM - Online Radio, Klicken und H&ouml;ren" src="/common/radio/i/v/flagdeutschland.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['Italia.FM']);" href="http://www.italia.fm" target="_blank" rel="noreferrer" title="Italia.FM - Per ascoltare la radio in Internet, fai clic e ascolta..."><img class="flagLImg" alt="Italia.FM - Per ascoltare la radio in Internet, fai clic e ascolta..." src="/common/radio/i/v/flagitalia.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['Danmark.FM']);" href="http://www.danmark.fm" target="_blank" rel="noreferrer" title="Danmark.FM - H&oslash;r radio over Internet, klik og lyt..."><img class="flagLImg" alt="Danmark.FM - H&oslash;r radio over Internet, klik og lyt..." src="/common/radio/i/v/flagdenemarken.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['Espana.FM']);" href="http://www.espana.fm" target="_blank" rel="noreferrer" title="Espana.FM - Escuchar la radio a trav&#233;s de internet, clicar y escuchar..."><img class="flagLImg" alt="Espana.FM - Escuchar la radio a trav&#233;s de internet, clicar y escuchar..." src="/common/radio/i/v/flagespana.gif" width="29" height="20"></a><a  onClick="dojo.publish('/analytics/flag', ['India.FM']);" href="http://www.india.fm" target="_blank" rel="noreferrer" title="India.FM - Internet Radio, Click and Listen..."><img class="flagLImg" alt="India.FM - Internet Radio, Click and Listen..." src="/common/radio/i/v/flagindia.gif" width="29" height="20"></a></div><div id="xhr">
+<a href="#"  rel="noreferrer"  onClick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A//www.nederland.fm', '_blank', 'width=575,height=600'); return false;">
+	<img class="si" src="/i/iconfacebook.gif" alt="Facebook" ></a>
+<a href="#"  rel="noreferrer"  onClick="window.open('https://twitter.com/intent/tweet?text=Ik%20luister%20naar%20mijn%20favoriete%20radiostation%20op%20www.nederland.fm', '_blank', 'width=400,height=520'); return false;">
+<img class="si" src="/i/icontwitter.gif" alt="Twitter"></a>
+</div></div>
+<div id="xfrm" class="darkshadow">
+<div id="xfrl"></div>
+<div id="logoframe">
+<div id="hspace"></div>
+<div id="xt">
+<div id="xtt">
+<div id="xttl">
+<div class="lgrklein" id="lindaradio"><a href="http://www.nederland.fm/lindaradio" title="LINDA.nl - 24/7 herkenbare en verrassende muziek voor elk moment van de dag - Pop/Hits"><img class="lgklein shadow" src="/i/l/lindaradioklein.gif" alt="LINDA.nl - 24/7 herkenbare en verrassende muziek voor elk moment van de dag - Pop/Hits"></a></div>
+<div class="lgr" id="radio538"><a href="http://www.nederland.fm/radio538" title="Radio 538 - The Beat Of The Moment - Pop/Hits"><img class="lg" src="/i/l/radio538.gif" alt="Radio 538 - The Beat Of The Moment - Pop/Hits"></a></div>
+</div>
+<div id="xttm">
+<div id="leaderboardbg"  class="shadow">
+<div class="gl gi"></div>
+<div id="div-gpt-ad-1584614643143-0">
+<a href="#" onclick="skyradio('Leaderboard')" title="Sky Radio"><img  src="/i/banners/skyradio_work_728x90.gif" alt="Sky Radio" width="728" height="90"/></a>
+</div></div></div>
+<div id="xttr">
+<div class="lgrkleinr" id="kink"><a href="http://www.nederland.fm/kink" title="Kink - No alternative - Alternatief"><img class="lgkleinr shadow" src="/i/l/kinkklein.gif" alt="Kink - No alternative - Alternatief"></a></div>
+<div class="lgrrechts" id="radio1"><a href="http://www.nederland.fm/radio1" title="Radio 1 - De zender voor nieuws en sport - Nieuws/Sport"><img class="lg lgrechts shadow" src="/i/l/radio1.gif" alt="Radio 1 - De zender voor nieuws en sport - Nieuws/Sport"></a></div>
+</div></div>
+<div id="xtb">
+<div class="lgr" id="538nonstop"><a href="http://www.nederland.fm/538nonstop" title="538 Non Stop - Een station, alle hits, non stop! - Pop/Hits"><img class="lg" src="/i/l/538nonstop.gif" alt="538 Non Stop - Een station, alle hits, non stop! - Pop/Hits"></a></div>
+<div class="lgr" id="q-music"><a href="http://www.nederland.fm/qmusic" title="Q sounds better with you - Pop/Hits"><img class="lg" src="/i/l/q-music.gif" alt="Q sounds better with you - Pop/Hits"></a></div>
+<div class="lgr" id="skyradio"><a href="http://www.nederland.fm/sky-radio" title="Sky Radio 101 FM – Non Stop Muziek"><img class="lg" src="/i/l/skyradio.gif" alt="Sky Radio 101 FM – Non Stop Muziek"></a></div>
+<div class="lgr" id="bnr"><a href="http://www.nederland.fm/bnr" title="BNR Nieuwsradio - Nieuws"><img class="lg" src="/i/l/bnr.gif" alt="BNR Nieuwsradio - Nieuws"></a></div>
+<div class="lgr" id="decibel"><a href="http://www.nederland.fm/decibel" title="Radio Decibel - De 90's zijn van ons ! - 90's/00's Hits"><img class="lg" src="/i/l/decibel.gif" alt="Radio Decibel - De 90's zijn van ons ! - 90's/00's Hits"></a></div>
+<div class="lgr" id="sublimefm"><a href="http://www.nederland.fm/sublimefm" title="Sublime -  Let’s Get It On! - Funk/Soul/Jazz/R&B"><img class="lg" src="/i/l/sublimefm.gif" alt="Sublime -  Let’s Get It On! - Funk/Soul/Jazz/R&B"></a></div>
+<div class="lgr" id="veronicafm"><a href="http://www.nederland.fm/veronica" title="Radio Veronica - Alleen Echte Hits! - Pop/Hits"><img class="lg" src="/i/l/veronicafm.gif" alt="Radio Veronica - Alleen Echte Hits! - Pop/Hits"></a></div>
+<div class="lgr" id="radio10"><a href="http://www.nederland.fm/radio10" title="Radio 10 - De Grootste Hits Aller Tijden"><img class="lg" src="/i/l/radio10.gif" alt="Radio 10 - De Grootste Hits Aller Tijden"></a></div>
+<div class="lgr" id="radio2"><a href="http://www.nederland.fm/radio2" title="Radio 2 - De muziek zegt alles - Pop/Oldies/Nederlandstalig"><img class="lg" src="/i/l/radio2.gif" alt="Radio 2 - De muziek zegt alles - Pop/Oldies/Nederlandstalig"></a></div>
+</div></div>
+<div id="xm">
+<div id="xml">
+<div class="lgr" id="538hitzone"><a href="http://www.nederland.fm/538hitzone" title="538 Hitzone - De nieuwste hits gepresenteerd door 538 DJ talent - Pop/Hits"><img class="lg" src="/i/l/538hitzone.gif" alt="538 Hitzone - De nieuwste hits gepresenteerd door 538 DJ talent - Pop/Hits"></a></div>
+<div class="lgr" id="q-musicnonstop"><a href="http://www.nederland.fm/qmusicnonstop" title="Qmusic Non-Stop - Pop/Hits"><img class="lg" src="/i/l/q-musicnonstop.gif" alt="Qmusic Non-Stop - Pop/Hits"></a></div>
+<div class="lgr" id="skyhits"><a href="http://www.nederland.fm/skyradiohits" title="Sky Radio Hits – Non Stop de beste Hits"><img class="lg" src="/i/l/skyhits.gif" alt="Sky Radio Hits – Non Stop de beste Hits"></a></div>
+<div class="lgr" id="538top50"><a href="http://www.nederland.fm/538top50" title="538 Top 50"><img class="lg" src="/i/l/538top50.gif" alt="538 Top 50"></a></div> 
+<div class="lgr" id="qmusictop40"><a href="http://www.nederland.fm/qmusictop40" title="Qmusic Top40 - Pop/Hits"><img class="lg" src="/i/l/qmusictop40.gif" alt="Qmusic Top40 - Pop/Hits"></a></div>
+<div class="lgr" id="skysummerhits"><a href="http://www.nederland.fm/skysummerhits" title="Sky Radio Summerhits - Zomerhits"><img class="lg" src="/i/l/skysummerhits.gif" alt="Sky Radio Summerhits - Zomerhits"></a></div>
+<div class="lgr" id="538zomer"><a href="http://www.nederland.fm/538zomer" title="538 Zomer - Zomerhits"><img class="lg" src="/i/l/538zomer.gif" alt="538 Zomer - Zomerhits"></a></div>
+<div class="lgr" id="q-musicfouteuur"><a href="http://www.nederland.fm/qmusichetfouteuur" title="Qmusic Het Foute Uur - Hits/Classics"><img class="lg" src="/i/l/q-musicfouteuur2.gif" alt="Qmusic Het Foute Uur - Hits/Classics"></a></div>
+<div class="lgr" id="skylovesongs"><a href="http://www.nederland.fm/skyradiolovesongs" title="Sky Radio Lovesongs – Non Stop Lovesongs"><img class="lg" src="/i/l/skylovesongs.gif" alt="Sky Radio Lovesongs – Non Stop Lovesongs"></a></div>
+<div class="lgr" id="538dancedept"><a href="http://www.nederland.fm/538dancedept" title="538 Dance Department -The best new dance music - Dance"><img class="lg" src="/i/l/538dancedept.gif" alt="538 Dance Department -The best new dance music - Dance"></a></div>
+<div class="lgr" id="qmusicsummer"><a href="http://www.nederland.fm/qmusicsummer" title="Qmusic Summer - Zomerhits"><img class="lg" src="/i/l/qmusicsummer.gif" alt="Qmusic Summer - Zomerhits"></a></div>
+<div class="lgr" id="skywork"><a href="http://www.nederland.fm/skywork" title="Sky Radio Non Stop @ Work"><img class="lg" src="/i/l/skywork.gif" alt="Sky Radio Non Stop @ Work"></a></div>
+</div>
+<div id="xmm">
+<div id="xmmt">
+<div id="playerbg" class="shadow">
+<div id="player">
+<div id="nlfm_video" style="display:none"></div>
+<div id="zender_page">
+<img src="/i/a/middengedeeltetitel.gif" alt="Nederland.FM" width="300" height="34">
+<img src="i/a/middengedeeltemidden.gif" alt="middengedeeltemidden" width="300" height="93">
+<img src="i/a/playergedeelte.gif" alt="middengedeeltemidden" width="300" height="59">
+</div></div></div></div>
+<div id="xmmb">
+<div class="lgr" id="100pnl"><a href="http://www.nederland.fm/100pnl" title="100% NL - De Muziek van Nederland"><img class="lg" src="/i/l/100pnl.gif" alt="100% NL - De Muziek van Nederland"></a></div>
+<div class="lgr" id="100feest"><a href="http://www.nederland.fm/100feest" title="100% NL FEEST - De leukste feesthits van Nederland"><img class="lg" src="/i/l/100feest.gif" alt="100% NL FEEST - De leukste feesthits van Nederland"></a></div>
+<div class="lgr" id="100songfestival"><a href="http://www.nederland.fm/100songfestival" title="100% NL Songfestival - Songfestival liedjes"><img class="lg" src="/i/l/100songfestival.gif" alt="100% NL Songfestival - Songfestival liedjes"></a></div>
+</div></div>
+<div id="xmr">
+<div class="lgrrechts" id="veronicanonstop"><a href="http://www.nederland.fm/veronicanonstop" title="Veronica Non-Stop"><img class="lg lgrechts shadow" src="/i/l/veronicanonstop.gif" alt="Veronica Non-Stops"></a></div>
+<div class="lgr" id="radio10nonstop"><a href="http://www.nederland.fm/radio10nonstop" title="Radio 10 Non Stop"><img class="lg" src="/i/l/radio10nonstop.gif" alt="Radio 10 Non Stop"></a></div>
+<div class="lgr" id="3fm"><a href="http://www.nederland.fm/3fm" title="3 FM - Serious Radio - Pop/Hits/(Live) Concerts & Festivals"><img class="lg" src="/i/l/3fm.gif" alt="3 FM - Serious Radio - Pop/Hits/(Live) Concerts & Festivals"></a></div>
+<div class="lgrrechts" id="rockradio"><a href="http://www.nederland.fm/veronicarockradio" title="Veronica Rock Radio  - Rock"><img class="lg lgrechts shadow" src="/i/l/rockradio.gif" alt="Veronica Rock Radio  - Rock"></a></div>
+<div class="lgr" id="6070shits"><a href="http://www.nederland.fm/radio106070shits" title="De Grootste Hits uit de 60's & 70's"><img class="lg" src="/i/l/6070shits.gif" alt="De Grootste Hits uit de 60's & 70's"></a></div>
+<div class="lgr" id="radio4"><a href="http://www.nederland.fm/radio4" title="Radio 4 - Klassiek leeft op 4! - Klassiek/(Live) Concerten"><img class="lg" src="/i/l/radio4.gif" alt="Radio 4 - Klassiek leeft op 4! - Klassiek/(Live) Concerten"></a></div>
+<div class="lgrrechts" id="top1000"><a href="http://www.nederland.fm/veronicatop1000" title="De Top 1000 Allertijden - De 1000 beste platen ooit gemaakt - Hits/Classics"><img class="lg lgrechts shadow" src="/i/l/top1000.gif" alt="De Top 1000 Allertijden - De 1000 beste platen ooit gemaakt - Hits/Classics"></a></div>
+<div class="lgr" id="radio1080shits"><a href="http://www.nederland.fm/radio1080shits" title="De Grootste Hits uit de 80's"><img class="lg" src="/i/l/radio1080shits.gif" alt="De Grootste Hits uit de 80's"></a></div>
+<div class="lgr" id="radio5"><a href="http://www.nederland.fm/radio5" title="Radio 5 - Nostalgia - Oldies/Easy Listening/Middle of the road"><img class="lg" src="/i/l/radio5.gif" alt="Radio 5 - Nostalgia - Oldies/Easy Listening/Middle of the road"></a></div>
+<div class="lgrrechts" id="classicfm"><a href="http://www.nederland.fm/classicfm" title="ClassicNL – Licht klassiek voor iedereen"><img class="lg lgrechts shadow" src="/i/l/classicfm.gif" alt="ClassicNL – Licht klassiek voor iedereen"></a></div>
+<div class="lgr" id="arrow"><a href="http://www.nederland.fm/arrowclassicrock" title="Arrow Classic Rock - Classic Rock"><img class="lg" src="/i/l/arrow.gif" alt="Arrow Classic Rock - Classic Rock"></a></div>
+<div class="lgr" id="funx"><a href="http://www.nederland.fm/funx" title="FunX - Welkom bij jezelf ! - Slow Jamz/Fusion/Dance Classics"><img class="lg" src="/i/l/funx.gif" alt="FunX - Welkom bij jezelf ! - Slow Jamz/Fusion/Dance Classics"></a></div>
+</div></div>
+<div id="xb">
+<div id="xbt">
+<div id="xbtl">
+<div class="lgr xlh" id="538verruckt"><a href="http://www.nederland.fm/538verruckt" title="538 Verr&uuml;ckte Stunden"><img class="lg" src="/i/l/538verruckt.gif" alt="538 Verr&uuml;ckte Stunden"></a></div> 
+</div>
+<div id="xbtm">
+<div id="bannerbg" class="shadow"><div class="gi gf"></div>
+<div id="xbtml">
+<div class="lgrbanner" id="joe"><a href="http://www.nederland.fm/joe" title="Joe"><img src="/i/banners/joe_120x60.gif" alt="Joe" width="120" height="60"/></a></div>
+</div> 
+<div id="xbtmm">
+<div id="fullbanner">
+<a href="#" onclick="skyradio('Banner')" title="Sky Radio"><img  src="/i/banners/skyradio_work_468x60.gif" alt="Sky Radio" width="468" height="60"/>
+</div></div>
+<div id="xbtmr">
+<div class="lgrbanner" id="grandprix"><a href="http://www.nederland.fm/grandprix" title="Grand Prix Radio">
+<img  src="/i/banners/grandprixradio_120x60.gif" alt="Grand Prix Radio" width="120" height="60"/>
+</a></div>
+</div></div></div>
+<div id="xbtr">
+<div class="lgrhr xlh" id="candlelight"><a href="http://www.nederland.fm/candlelight" title="Candlelight Radio - Lovesongs"><img class="lghr shadow" src="/i/l/candlelight.gif" alt="Candlelight Radio - Lovesongs"></a></div>
+</div></div><div id="xbb">
+<div class="lgr" id="538ibiza"><a href="http://www.nederland.fm/538ibiza" title="538 Ibiza"><img class="lg" src="/i/l/538ibiza.gif" alt="538 Ibiza"></a></div>
+<div class="lgr" id="soulradio"><a href="http://www.nederland.fm/soulradio" title="Soul Radio - The station that moves you - Soul"><img class="lg"  src="/i/l/soulradio.gif" alt="Soul Radio - The station that moves you - Soul"></a></div>
+<div class="lgr" id="slamfm"><a href="http://www.nederland.fm/slamfm" title="SLAM! - The New Music Station - Dance/Club"><img class="lg" src="/i/l/slamfm.gif" alt="SLAM! - The New Music Station - Dance/Club"></a></div>
+<div class="lgr" id="slamnonstop"><a href="http://www.nederland.fm/slamnonstop" title="Slam! Non Stop"><img class="lg" src="/i/l/slamnonstop.gif" alt="Slam! Non Stop"></a></div>
+<div class="lgr" id="slam00s"><a href="http://www.nederland.fm/slam00s" title="Slam 00's - Classics"><img class="lg" src="/i/l/slam00s.gif" alt="Slam 00's - Classics"></a></div>
+<div class="lgr" id="slamhousuh"><a href="http://www.nederland.fm/slamhousuh" title="SLAM! Housuh In De Pauzuh"><img class="lg" src="/i/l/slamhousuh.gif" alt="SLAM! Housuh In De Pauzuh"></a></div>
+<div class="lgr" id="slammix"><a href="http://www.nederland.fm/slammix" title="SLAM! Mixmarathon"><img class="lg" src="/i/l/slammix.gif" alt="SLAM! Mixmarathon"></a></div>
+<div class="lgr" id="caz"><a href="http://www.nederland.fm/arrowcaz" title="Arrow CAZ - Your Hits More Music - Pop/Hits"><img class="lg" src="/i/l/caz.gif" alt="Arrow CAZ - Your Hits More Music - Pop/Hits"></a></div>
+<div class="lgr" id="efteling"><a href="http://www.nederland.fm/efteling" title="Efteling Kids Radio - kinderliedjes"><img class="lg" src="/i/l/efteling.gif" alt="Efteling Kids Radio - kinderliedjes"></a></div>
+</div></div></div></div>
+<div id="xf"><style>.footerLink{padding-right: 52px;}</style>
+<div id="xful" style="margin-left:70px;width:998px">
+<a href="https://www.nederland.tv"  rel="noreferrer" title="Nederland.TV: TV kijken via internet" class="footerLink" target="_blank" style="width:80px;">Nederland.TV</a>
+<a href="http://www.onlineradio.nl"  rel="noreferrer"  title="OnlineRadio.nl - Best of the Rest !" class="footerLink" target="_blank" style="width:80px;">OnlineRadio.nl</a>
+<a href="/cookies.php" title="Privacy &amp; Cookies" class="footerLink" target="_blank" style="width:100px;">Privacy &amp; Cookies</a>
+<a id="htmldlg" href="/apps.htm" title="Nederland.FM op je Mobiel" class="footerLink dojoLink" style="width:130px;">Mobiele versies & apps</a>
+<a id="htmldlg" href="/overons.htm" title="Over ons" class="footerLink dojoLink" style="width:50px">Contact</a>
+<a href="http://www.facebook.com/nederlandfm"  rel="noreferrer"  target="_blank" title="Volg ons op Facebook" class="footerLink" style="width:130px;">Volg ons op Facebook</a>
+</div>
+</div>
+<div style="text-align:center">	
+<div id='div-gpt-ad-1510675016342-2'>
+<!-- <script>
+googletag.cmd.push(function() {googletag.display('div-gpt-ad-1510675016342-2'); });
+</script> -->
+</div>
+</div>
+</div>
+<script  src="https://massariuscdn.com/pubs/nederlandfm/nlfm_hb_setup.js"></script>
+<script>
+  googletag.cmd.push(function() {googletag.display('div-gpt-ad-1512037844968-2'); });
+  googletag.cmd.push(function() {googletag.display('div-gpt-ad-1512037844968-0'); });
+ googletag.cmd.push(function() {googletag.display('div-gpt-ad-1510675016342-2'); });
+</script>
+<script type="text/javascript">
+var google_conversion_id = 1056687190;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<iframe width="0" height="0" src="/stats/bezoek_count.php"  style="visibility:hidden;display:none"></iframe> 
+<img src="" border="0" width="1" height="1" id="track"/>
+<!-- <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script> -->
+<script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+</body>
+</html>
