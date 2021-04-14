@@ -1,23 +1,2192 @@
+
 <!DOCTYPE html>
-<html>
-    <meta content="IuCC" property="og:title">
-    <meta content="IuCC's official website" property="og:description">
-    <meta content="http://iucc.ml/" property="og:url">
-    <meta content="https://www.mc-heads.net/body/341a330a05e74cfdb664d015e50973a0/128.png" property="og:image">
-    <meta content="#43B581" data-react-helmet="true" name="theme-color">
-<head>
-    <title>IuCC - troled!</title>
-<body>
-    <header>allow popups :)</header>
-    <script type="text/javascript">
-<iframe id="fr" src="http://en.wikipedia.org/wiki/Main_Page"
-        style="border: 0; width:100%; height:100%;" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-    function CrashAndBurn(url) { popupWindow = window.open( url,'popUpWindow','height=181,width=666,left=3,top=222') }
-    </script> 
-    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
-    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
-    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
-    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
-    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Colorize FUN</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://colorize.fun/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+  <script src='js/min-48a7edd05477.js?1593830756'></script>
+  <script src='js/min-9ec7cb66fcd5.js?1594013452'></script>
+</head>
+<body class="minecraft">
+
+<header>
+  <div id="lang">
+            <a href="../en/minecraft"><div class="lang-en"></div></a>
+        <a href="../fr/minecraft"><div class="lang-fr"></div></a>  </div>
+  <h1><a href="./"><span class="colorize">Colorize</span> <span class="fun">FUN</span></a></h1>
+  <h2>Create colored text fot your website, IRC tchat and Minecraft. Just Copy and Paste.</h2>
+</header>
+
+<nav>
+  <div class="nav-content"><a href="html" class="button html"><span class="big">HTML</span> <span class="small">Website</span></a><a href="bbcode" class="button bbcode"><span class="big">BBCode</span> <span class="small">Forum</span></a><a href="irc" class="button irc"><span class="big">IRC</span> <span class="small">Chat</span></a><a href="minecraft" class="button minecraft active"><span class="big">Minecraft</span> <span class="small">The game</span></a>  </div>
+</nav>
+<script>
+  var format = 'minecraft';
+</script>
+
+
+
+<div class="editor">
+  <div class="shaping">
+    <span class="style bold" data-tooltip="Bold"><b>B</b></span>
+          <span class="style italic" data-tooltip="Italic"><i>I</i></span>
+              <span class="style underline" data-tooltip="Underline"><u>U</u></span>
+                <span class="deco_button emoji" data-target="emoji" data-tooltip="Emoji">😃</span>
+    <span class="deco_button symbol" data-target="symbol" data-tooltip="Symbols">#</span>
+  </div>
+
+
+<div class="popup popup-emoji" style="display: none">
+        <span class="title">Smileys</span> 
+    <a onclick="t_add('😀')">😀</a>
+    <a onclick="t_add('😁')">😁</a>
+    <a onclick="t_add('😂')">😂</a>
+    <a onclick="t_add('🤣')">🤣</a>
+    <a onclick="t_add('😃')">😃</a>
+    <a onclick="t_add('😄')">😄</a>
+    <a onclick="t_add('😅')">😅</a>
+    <a onclick="t_add('😆')">😆</a>
+    <a onclick="t_add('😉')">😉</a>
+    <a onclick="t_add('😊')">😊</a>
+    <a onclick="t_add('😋')">😋</a>
+    <a onclick="t_add('😎')">😎</a>
+    <a onclick="t_add('😍')">😍</a>
+    <a onclick="t_add('😘')">😘</a>
+    <a onclick="t_add('😗')">😗</a>
+    <a onclick="t_add('😙')">😙</a>
+    <a onclick="t_add('😚')">😚</a>
+    <a onclick="t_add('🙂')">🙂</a>
+    <a onclick="t_add('🤗')">🤗</a>
+    <a onclick="t_add('🤩')">🤩</a>
+    <a onclick="t_add('🤔')">🤔</a>
+    <a onclick="t_add('🤨')">🤨</a>
+    <a onclick="t_add('😐')">😐</a>
+    <a onclick="t_add('😑')">😑</a>
+    <a onclick="t_add('😶')">😶</a>
+    <a onclick="t_add('🙄')">🙄</a>
+    <a onclick="t_add('😏')">😏</a>
+    <a onclick="t_add('😣')">😣</a>
+    <a onclick="t_add('😥')">😥</a>
+    <a onclick="t_add('😮')">😮</a>
+    <a onclick="t_add('🤐')">🤐</a>
+    <a onclick="t_add('😯')">😯</a>
+    <a onclick="t_add('😪')">😪</a>
+    <a onclick="t_add('😫')">😫</a>
+    <a onclick="t_add('😴')">😴</a>
+    <a onclick="t_add('😌')">😌</a>
+    <a onclick="t_add('😛')">😛</a>
+    <a onclick="t_add('😜')">😜</a>
+    <a onclick="t_add('😝')">😝</a>
+    <a onclick="t_add('🤤')">🤤</a>
+    <a onclick="t_add('😒')">😒</a>
+    <a onclick="t_add('😓')">😓</a>
+    <a onclick="t_add('😔')">😔</a>
+    <a onclick="t_add('😕')">😕</a>
+    <a onclick="t_add('🙃')">🙃</a>
+    <a onclick="t_add('🤑')">🤑</a>
+    <a onclick="t_add('😲')">😲</a>
+    <a onclick="t_add('☹️')">☹️</a>
+    <a onclick="t_add('🙁')">🙁</a>
+    <a onclick="t_add('😖')">😖</a>
+    <a onclick="t_add('😞')">😞</a>
+    <a onclick="t_add('😟')">😟</a>
+    <a onclick="t_add('😤')">😤</a>
+    <a onclick="t_add('😢')">😢</a>
+    <a onclick="t_add('😭')">😭</a>
+    <a onclick="t_add('😦')">😦</a>
+    <a onclick="t_add('😧')">😧</a>
+    <a onclick="t_add('😨')">😨</a>
+    <a onclick="t_add('😩')">😩</a>
+    <a onclick="t_add('🤯')">🤯</a>
+    <a onclick="t_add('😬')">😬</a>
+    <a onclick="t_add('😰')">😰</a>
+    <a onclick="t_add('😱')">😱</a>
+    <a onclick="t_add('😳')">😳</a>
+    <a onclick="t_add('🤪')">🤪</a>
+    <a onclick="t_add('😵')">😵</a>
+    <a onclick="t_add('😡')">😡</a>
+    <a onclick="t_add('😠')">😠</a>
+    <a onclick="t_add('🤬')">🤬</a>
+    <a onclick="t_add('😷')">😷</a>
+    <a onclick="t_add('🤒')">🤒</a>
+    <a onclick="t_add('🤕')">🤕</a>
+    <a onclick="t_add('🤢')">🤢</a>
+    <a onclick="t_add('🤮')">🤮</a>
+    <a onclick="t_add('🤧')">🤧</a>
+    <a onclick="t_add('😇')">😇</a>
+    <a onclick="t_add('🤠')">🤠</a>
+    <a onclick="t_add('🤥')">🤥</a>
+    <a onclick="t_add('🤫')">🤫</a>
+    <a onclick="t_add('🤭')">🤭</a>
+    <a onclick="t_add('🧐')">🧐</a>
+    <a onclick="t_add('🤓')">🤓</a>
+    <a onclick="t_add('😈')">😈</a>
+    <a onclick="t_add('👿')">👿</a>
+    <a onclick="t_add('🤡')">🤡</a>
+    <a onclick="t_add('👹')">👹</a>
+    <a onclick="t_add('👺')">👺</a>
+    <a onclick="t_add('💀')">💀</a>
+    <a onclick="t_add('☠️')">☠️</a>
+    <a onclick="t_add('👻')">👻</a>
+    <a onclick="t_add('👽')">👽</a>
+    <a onclick="t_add('👾')">👾</a>
+    <a onclick="t_add('🤖')">🤖</a>
+    <a onclick="t_add('💩')">💩</a>
+    <a onclick="t_add('🙊')">🙊</a>
+
+    <span class="title">Love</span> 
+    <a onclick="t_add('💋')">💋</a> 
+    <a onclick="t_add('💘')">💘</a> 
+    <a onclick="t_add('💝')">💝</a> 
+    <a onclick="t_add('💖')">💖</a> 
+    <a onclick="t_add('💗')">💗</a> 
+    <a onclick="t_add('💓')">💓</a> 
+    <a onclick="t_add('💞')">💞</a> 
+    <a onclick="t_add('💕')">💕</a> 
+    <a onclick="t_add('💌')">💌</a> 
+    <a onclick="t_add('❣️')">❣️</a> 
+    <a onclick="t_add('💔')">💔</a> 
+    <a onclick="t_add('❤️')">❤️</a> 
+    <a onclick="t_add('🧡')">🧡</a> 
+    <a onclick="t_add('💛')">💛</a> 
+    <a onclick="t_add('💚')">💚</a> 
+    <a onclick="t_add('💙')">💙</a> 
+    <a onclick="t_add('💜')">💜</a> 
+    <a onclick="t_add('🖤')">🖤</a> 
+    <a onclick="t_add('💟')">💟</a> 
+    <a onclick="t_add('💍')">💍</a> 
+    <a onclick="t_add('💎')">💎</a> 
+    <a onclick="t_add('💐')">💐</a> 
+    <a onclick="t_add('💒')">💒</a>
+
+
+    <span class="title">Peoples</span> 
+    <a onclick="t_add('👶')">👶</a> 
+    <a onclick="t_add('🧒')">🧒</a> 
+    <a onclick="t_add('👦')">👦</a> 
+    <a onclick="t_add('👧')">👧</a> 
+    <a onclick="t_add('🧑')">🧑</a> 
+    <a onclick="t_add('👨')">👨</a> 
+    <a onclick="t_add('👱‍♂️')">👱‍♂️</a> 
+    <a onclick="t_add('🧔')">🧔</a> 
+    <a onclick="t_add('👩')">👩</a> 
+    <a onclick="t_add('👱‍♀️')">👱‍♀️</a> 
+    <a onclick="t_add('🧓')">🧓</a> 
+    <a onclick="t_add('👴')">👴</a> 
+    <a onclick="t_add('👵')">👵</a> 
+    <a onclick="t_add('👨‍⚕️')">👨‍⚕️</a> 
+    <a onclick="t_add('👩‍⚕️')">👩‍⚕️</a> 
+    <a onclick="t_add('👨‍🎓')">👨‍🎓</a> 
+    <a onclick="t_add('👩‍🎓')">👩‍🎓</a> 
+    <a onclick="t_add('👨‍🏫')">👨‍🏫</a> 
+    <a onclick="t_add('👩‍🏫')">👩‍🏫</a> 
+    <a onclick="t_add('👨‍⚖️')">👨‍⚖️</a> 
+    <a onclick="t_add('👩‍⚖️')">👩‍⚖️</a> 
+    <a onclick="t_add('👨‍🌾')">👨‍🌾</a> 
+    <a onclick="t_add('👩‍🌾')">👩‍🌾</a> 
+    <a onclick="t_add('👨‍🍳')">👨‍🍳</a> 
+    <a onclick="t_add('👩‍🍳')">👩‍🍳</a> 
+    <a onclick="t_add('👨‍🔧')">👨‍🔧</a> 
+    <a onclick="t_add('👩‍🔧')">👩‍🔧</a> 
+    <a onclick="t_add('👨‍🏭')">👨‍🏭</a> 
+    <a onclick="t_add('👩‍🏭')">👩‍🏭</a> 
+    <a onclick="t_add('👨‍💼')">👨‍💼</a> 
+    <a onclick="t_add('👩‍💼')">👩‍💼</a> 
+    <a onclick="t_add('👨‍🔬')">👨‍🔬</a> 
+    <a onclick="t_add('👩‍🔬')">👩‍🔬</a> 
+    <a onclick="t_add('👨‍💻')">👨‍💻</a> 
+    <a onclick="t_add('👩‍💻')">👩‍💻</a> 
+    <a onclick="t_add('👨‍🎤')">👨‍🎤</a> 
+    <a onclick="t_add('👩‍🎤')">👩‍🎤</a> 
+    <a onclick="t_add('👨‍🎨')">👨‍🎨</a> 
+    <a onclick="t_add('👩‍🎨')">👩‍🎨</a> 
+    <a onclick="t_add('👨‍✈️')">👨‍✈️</a> 
+    <a onclick="t_add('👩‍✈️')">👩‍✈️</a> 
+    <a onclick="t_add('👨‍🚀')">👨‍🚀</a> 
+    <a onclick="t_add('👩‍🚀')">👩‍🚀</a> 
+    <a onclick="t_add('👨‍🚒')">👨‍🚒</a> 
+    <a onclick="t_add('👩‍🚒')">👩‍🚒</a> 
+    <a onclick="t_add('👮‍♂️')">👮‍♂️</a> 
+    <a onclick="t_add('👮‍♀️')">👮‍♀️</a> 
+    <a onclick="t_add('🕵️‍♂️')">🕵️‍♂️</a> 
+    <a onclick="t_add('🕵️‍♀️')">🕵️‍♀️</a> 
+    <a onclick="t_add('💂‍♂️')">💂‍♂️</a> 
+    <a onclick="t_add('💂‍♀️')">💂‍♀️</a> 
+    <a onclick="t_add('👷‍♂️')">👷‍♂️</a> 
+    <a onclick="t_add('👷‍♀️')">👷‍♀️</a> 
+    <a onclick="t_add('🤴')">🤴</a> 
+    <a onclick="t_add('👸')">👸</a> 
+    <a onclick="t_add('👳‍♂️')">👳‍♂️</a> 
+    <a onclick="t_add('👳‍♀️')">👳‍♀️</a> 
+    <a onclick="t_add('👲')">👲</a> 
+    <a onclick="t_add('🧕')">🧕</a> 
+    <a onclick="t_add('🤵')">🤵</a> 
+    <a onclick="t_add('👰')">👰</a> 
+    <a onclick="t_add('🤰')">🤰</a> 
+    <a onclick="t_add('🤱')">🤱</a> 
+    <a onclick="t_add('👼')">👼</a> 
+    <a onclick="t_add('🎅')">🎅</a> 
+    <a onclick="t_add('🤶')">🤶</a> 
+    <a onclick="t_add('🧙‍♂️')">🧙‍♂️</a> 
+    <a onclick="t_add('🧙‍♀️')">🧙‍♀️</a> 
+    <a onclick="t_add('🧚‍♂️')">🧚‍♂️</a> 
+    <a onclick="t_add('🧚‍♀️')">🧚‍♀️</a> 
+    <a onclick="t_add('🧛‍♂️')">🧛‍♂️</a> 
+    <a onclick="t_add('🧛‍♀️')">🧛‍♀️</a> 
+    <a onclick="t_add('🧜‍♂️')">🧜‍♂️</a> 
+    <a onclick="t_add('🧜‍♀️')">🧜‍♀️</a> 
+    <a onclick="t_add('🧝‍♂️')">🧝‍♂️</a> 
+    <a onclick="t_add('🧝‍♀️')">🧝‍♀️</a> 
+    <a onclick="t_add('🧞‍♂️')">🧞‍♂️</a> 
+    <a onclick="t_add('🧞‍♀️')">🧞‍♀️</a> 
+    <a onclick="t_add('🧟‍♂️')">🧟‍♂️</a> 
+    <a onclick="t_add('🧟‍♀️')">🧟‍♀️</a> 
+    <a onclick="t_add('🙍‍♂️')">🙍‍♂️</a> 
+    <a onclick="t_add('🙍‍♀️')">🙍‍♀️</a> 
+    <a onclick="t_add('🙎‍♂️')">🙎‍♂️</a> 
+    <a onclick="t_add('🙎‍♀️')">🙎‍♀️</a> 
+    <a onclick="t_add('🙅‍♂️')">🙅‍♂️</a> 
+    <a onclick="t_add('🙅‍♀️')">🙅‍♀️</a> 
+    <a onclick="t_add('🙆‍♂️')">🙆‍♂️</a> 
+    <a onclick="t_add('🙆‍♀️')">🙆‍♀️</a> 
+    <a onclick="t_add('💁‍♂️')">💁‍♂️</a> 
+    <a onclick="t_add('💁‍♀️')">💁‍♀️</a> 
+    <a onclick="t_add('🙋‍♂️')">🙋‍♂️</a> 
+    <a onclick="t_add('🙋‍♀️')">🙋‍♀️</a> 
+    <a onclick="t_add('🙇‍♂️')">🙇‍♂️</a> 
+    <a onclick="t_add('🙇‍♀️')">🙇‍♀️</a> 
+    <a onclick="t_add('🤦')">🤦</a> 
+    <a onclick="t_add('🤦‍♂️')">🤦‍♂️</a> 
+    <a onclick="t_add('🤦‍♀️')">🤦‍♀️</a> 
+    <a onclick="t_add('🤷')">🤷</a> 
+    <a onclick="t_add('🤷‍♂️')">🤷‍♂️</a> 
+    <a onclick="t_add('🤷‍♀️')">🤷‍♀️</a> 
+    <a onclick="t_add('💆‍♂️')">💆‍♂️</a> 
+    <a onclick="t_add('💆‍♀️')">💆‍♀️</a> 
+    <a onclick="t_add('💇‍♂️')">💇‍♂️</a> 
+    <a onclick="t_add('💇‍♀️')">💇‍♀️</a> 
+    <a onclick="t_add('👤')">👤</a> 
+    <a onclick="t_add('👥')">👥</a> 
+    <a onclick="t_add('👫')">👫</a> 
+    <a onclick="t_add('👬')">👬</a> 
+    <a onclick="t_add('👭')">👭</a> 
+    <a onclick="t_add('👩‍❤️‍💋‍👨')">👩‍❤️‍💋‍👨</a> 
+    <a onclick="t_add('👨‍❤️‍💋‍👨')">👨‍❤️‍💋‍👨</a> 
+    <a onclick="t_add('👩‍❤️‍💋‍👩')">👩‍❤️‍💋‍👩</a> 
+    <a onclick="t_add('👩‍❤️‍👨')">👩‍❤️‍👨</a> 
+    <a onclick="t_add('👨‍❤️‍👨')">👨‍❤️‍👨</a> 
+    <a onclick="t_add('👩‍❤️‍👩')">👩‍❤️‍👩</a> 
+    <a onclick="t_add('👨‍👩‍👦')">👨‍👩‍👦</a> 
+    <a onclick="t_add('👨‍👩‍👧')">👨‍👩‍👧</a> 
+    <a onclick="t_add('👨‍👩‍👧‍👦')">👨‍👩‍👧‍👦</a> 
+    <a onclick="t_add('👨‍👩‍👦‍👦')">👨‍👩‍👦‍👦</a> 
+    <a onclick="t_add('👨‍👩‍👧‍👧')">👨‍👩‍👧‍👧</a> 
+    <a onclick="t_add('👨‍👨‍👦')">👨‍👨‍👦</a> 
+    <a onclick="t_add('👨‍👨‍👧')">👨‍👨‍👧</a> 
+    <a onclick="t_add('👨‍👨‍👧‍👦')">👨‍👨‍👧‍👦</a> 
+    <a onclick="t_add('👨‍👨‍👦‍👦')">👨‍👨‍👦‍👦</a> 
+    <a onclick="t_add('👨‍👨‍👧‍👧')">👨‍👨‍👧‍👧</a> 
+    <a onclick="t_add('👩‍👩‍👦')">👩‍👩‍👦</a> 
+    <a onclick="t_add('👩‍👩‍👧')">👩‍👩‍👧</a> 
+    <a onclick="t_add('👩‍👩‍👧‍👦')">👩‍👩‍👧‍👦</a> 
+    <a onclick="t_add('👩‍👩‍👦‍👦')">👩‍👩‍👦‍👦</a> 
+    <a onclick="t_add('👩‍👩‍👧‍👧')">👩‍👩‍👧‍👧</a> 
+    <a onclick="t_add('👨‍👦')">👨‍👦</a> 
+    <a onclick="t_add('👨‍👦‍👦')">👨‍👦‍👦</a> 
+    <a onclick="t_add('👨‍👧')">👨‍👧</a> 
+    <a onclick="t_add('👨‍👧‍👦')">👨‍👧‍👦</a> 
+    <a onclick="t_add('👨‍👧‍👧')">👨‍👧‍👧</a> 
+    <a onclick="t_add('👩‍👦')">👩‍👦</a> 
+    <a onclick="t_add('👩‍👦‍👦')">👩‍👦‍👦</a> 
+    <a onclick="t_add('👩‍👧')">👩‍👧</a> 
+    <a onclick="t_add('👩‍👧‍👦')">👩‍👧‍👦</a> 
+    <a onclick="t_add('👩‍👧‍👧')">👩‍👧‍👧</a>
+
+
+    <span class="title">Gestures</span> 
+    <a onclick="t_add('🤳')">🤳</a> 
+    <a onclick="t_add('💪')">💪</a> 
+    <a onclick="t_add('👈')">👈</a> 
+    <a onclick="t_add('👉')">👉</a> 
+    <a onclick="t_add('☝️')">☝️</a> 
+    <a onclick="t_add('👆')">👆</a> 
+    <a onclick="t_add('🖕')">🖕</a> 
+    <a onclick="t_add('👇')">👇</a> 
+    <a onclick="t_add('✌️')">✌️</a> 
+    <a onclick="t_add('🤞')">🤞</a> 
+    <a onclick="t_add('🖖')">🖖</a> 
+    <a onclick="t_add('🤘')">🤘</a> 
+    <a onclick="t_add('🤙')">🤙</a> 
+    <a onclick="t_add('🖐️')">🖐️</a> 
+    <a onclick="t_add('✋')">✋</a> 
+    <a onclick="t_add('👌')">👌</a> 
+    <a onclick="t_add('👍')">👍</a> 
+    <a onclick="t_add('👎')">👎</a> 
+    <a onclick="t_add('✊')">✊</a> 
+    <a onclick="t_add('👊')">👊</a> 
+    <a onclick="t_add('🤛')">🤛</a> 
+    <a onclick="t_add('🤜')">🤜</a> 
+    <a onclick="t_add('🤚')">🤚</a> 
+    <a onclick="t_add('👋')">👋</a> 
+    <a onclick="t_add('🤟')">🤟</a> 
+    <a onclick="t_add('✍️')">✍️</a> 
+    <a onclick="t_add('👏')">👏</a> 
+    <a onclick="t_add('👐')">👐</a> 
+    <a onclick="t_add('🙌')">🙌</a> 
+    <a onclick="t_add('🤲')">🤲</a> 
+    <a onclick="t_add('🙏')">🙏</a> 
+    <a onclick="t_add('🤝')">🤝</a> 
+    <a onclick="t_add('👂')">👂</a> 
+    <a onclick="t_add('👃')">👃</a> 
+    <a onclick="t_add('👀')">👀</a> 
+    <a onclick="t_add('👁️')">👁️</a> 
+    <a onclick="t_add('🧠')">🧠</a> 
+    <a onclick="t_add('👅')">👅</a> 
+    <a onclick="t_add('👄')">👄</a> 
+
+
+    <span class="title">Activities</span> 
+    <a onclick="t_add('🚶‍♂️')">🚶‍♂️</a> 
+    <a onclick="t_add('🚶‍♀️')">🚶‍♀️</a> 
+    <a onclick="t_add('🏃‍♂️')">🏃‍♂️</a> 
+    <a onclick="t_add('🏃‍♀️')">🏃‍♀️</a> 
+    <a onclick="t_add('💃')">💃</a> 
+    <a onclick="t_add('🕺')">🕺</a> 
+    <a onclick="t_add('👯‍♂️')">👯‍♂️</a> 
+    <a onclick="t_add('👯‍♀️')">👯‍♀️</a> 
+    <a onclick="t_add('🧖‍♂️')">🧖‍♂️</a> 
+    <a onclick="t_add('🧖‍♀️')">🧖‍♀️</a> 
+    <a onclick="t_add('🧗‍♂️')">🧗‍♂️</a> 
+    <a onclick="t_add('🧗‍♀️')">🧗‍♀️</a> 
+    <a onclick="t_add('🧘‍♂️')">🧘‍♂️</a> 
+    <a onclick="t_add('🧘‍♀️')">🧘‍♀️</a> 
+    <a onclick="t_add('🛌')">🛌</a> 
+    <a onclick="t_add('🕴️')">🕴️</a> 
+    <a onclick="t_add('🗣️')">🗣️</a> 
+    <a onclick="t_add('🤺')">🤺</a> 
+    <a onclick="t_add('🏇')">🏇</a> 
+    <a onclick="t_add('⛷️')">⛷️</a> 
+    <a onclick="t_add('🏂')">🏂</a> 
+    <a onclick="t_add('🏌️‍♂️')">🏌️‍♂️</a> 
+    <a onclick="t_add('🏌️‍♀️')">🏌️‍♀️</a> 
+    <a onclick="t_add('🏄‍♂️')">🏄‍♂️</a> 
+    <a onclick="t_add('🏄‍♀️')">🏄‍♀️</a> 
+    <a onclick="t_add('🚣‍♂️')">🚣‍♂️</a> 
+    <a onclick="t_add('🚣‍♀️')">🚣‍♀️</a> 
+    <a onclick="t_add('🏊‍♂️')">🏊‍♂️</a> 
+    <a onclick="t_add('🏊‍♀️')">🏊‍♀️</a> 
+    <a onclick="t_add('⛹️‍♂️')">⛹️‍♂️</a> 
+    <a onclick="t_add('⛹️‍♀️')">⛹️‍♀️</a> 
+    <a onclick="t_add('🏋️‍♂️')">🏋️‍♂️</a> 
+    <a onclick="t_add('🏋️‍♀️')">🏋️‍♀️</a> 
+    <a onclick="t_add('🚴‍♂️')">🚴‍♂️</a> 
+    <a onclick="t_add('🚴‍♀️')">🚴‍♀️</a> 
+    <a onclick="t_add('🚵‍♂️')">🚵‍♂️</a> 
+    <a onclick="t_add('🚵‍♀️')">🚵‍♀️</a> 
+    <a onclick="t_add('🏎️')">🏎️</a> 
+    <a onclick="t_add('🏍️')">🏍️</a> 
+    <a onclick="t_add('🤸')">🤸</a> 
+    <a onclick="t_add('🤸‍♂️')">🤸‍♂️</a> 
+    <a onclick="t_add('🤸‍♀️')">🤸‍♀️</a> 
+    <a onclick="t_add('🤼')">🤼</a> 
+    <a onclick="t_add('🤼‍♂️')">🤼‍♂️</a> 
+    <a onclick="t_add('🤼‍♀️')">🤼‍♀️</a> 
+    <a onclick="t_add('🤽')">🤽</a> 
+    <a onclick="t_add('🤽‍♂️')">🤽‍♂️</a> 
+    <a onclick="t_add('🤽‍♀️')">🤽‍♀️</a> 
+    <a onclick="t_add('🤾')">🤾</a> 
+    <a onclick="t_add('🤾‍♂️')">🤾‍♂️</a> 
+    <a onclick="t_add('🤾‍♀️')">🤾‍♀️</a> 
+    <a onclick="t_add('🤹')">🤹</a> 
+    <a onclick="t_add('🤹‍♂️')">🤹‍♂️</a> 
+    <a onclick="t_add('🤹‍♀️')">🤹‍♀️</a> 
+    <a onclick="t_add('🎖️')">🎖️</a> 
+    <a onclick="t_add('🏆')">🏆</a> 
+    <a onclick="t_add('🏅')">🏅</a> 
+    <a onclick="t_add('🥇')">🥇</a> 
+    <a onclick="t_add('🥈')">🥈</a> 
+    <a onclick="t_add('🥉')">🥉</a> 
+    <a onclick="t_add('⚽')">⚽</a> 
+    <a onclick="t_add('⚾')">⚾</a> 
+    <a onclick="t_add('🏀')">🏀</a> 
+    <a onclick="t_add('🏐')">🏐</a> 
+    <a onclick="t_add('🏈')">🏈</a> 
+    <a onclick="t_add('🏉')">🏉</a> 
+    <a onclick="t_add('🎾')">🎾</a> 
+    <a onclick="t_add('🎳')">🎳</a> 
+    <a onclick="t_add('🏏')">🏏</a> 
+    <a onclick="t_add('🏑')">🏑</a> 
+    <a onclick="t_add('🏒')">🏒</a> 
+    <a onclick="t_add('🏓')">🏓</a> 
+    <a onclick="t_add('🏸')">🏸</a> 
+    <a onclick="t_add('🥊')">🥊</a> 
+    <a onclick="t_add('🥋')">🥋</a> 
+    <a onclick="t_add('🥅')">🥅</a> 
+    <a onclick="t_add('⛸️')">⛸️</a> 
+    <a onclick="t_add('🎣')">🎣</a> 
+    <a onclick="t_add('🎿')">🎿</a> 
+    <a onclick="t_add('🛷')">🛷</a> 
+    <a onclick="t_add('🥌')">🥌</a> 
+    <a onclick="t_add('🎯')">🎯</a> 
+    <a onclick="t_add('🎱')">🎱</a> 
+
+
+    <span class="title">Music &amp; Video</span> 
+    <a onclick="t_add('📢')">📢</a> 
+    <a onclick="t_add('📣')">📣</a> 
+    <a onclick="t_add('📯')">📯</a> 
+    <a onclick="t_add('🔔')">🔔</a> 
+    <a onclick="t_add('🎼')">🎼</a> 
+    <a onclick="t_add('🎵')">🎵</a> 
+    <a onclick="t_add('🎶')">🎶</a> 
+    <a onclick="t_add('🎙️')">🎙️</a> 
+    <a onclick="t_add('🎚️')">🎚️</a> 
+    <a onclick="t_add('🎛️')">🎛️</a> 
+    <a onclick="t_add('🎧')">🎧</a> 
+    <a onclick="t_add('📻')">📻</a> 
+    <a onclick="t_add('🎷')">🎷</a> 
+    <a onclick="t_add('🎸')">🎸</a> 
+    <a onclick="t_add('🎹')">🎹</a> 
+    <a onclick="t_add('🎺')">🎺</a> 
+    <a onclick="t_add('🎻')">🎻</a> 
+    <a onclick="t_add('🥁')">🥁</a> 
+    <a onclick="t_add('💽')">💽</a> 
+    <a onclick="t_add('💿')">💿</a> 
+    <a onclick="t_add('📀')">📀</a> 
+    <a onclick="t_add('🎥')">🎥</a> 
+    <a onclick="t_add('🎞️')">🎞️</a> 
+    <a onclick="t_add('📽️')">📽️</a> 
+    <a onclick="t_add('🎬')">🎬</a> 
+    <a onclick="t_add('📺')">📺</a> 
+    <a onclick="t_add('📷')">📷</a> 
+    <a onclick="t_add('📸')">📸</a> 
+    <a onclick="t_add('📹')">📹</a> 
+    <a onclick="t_add('📼')">📼</a> 
+
+
+    <span class="title">Food</span> 
+    <a onclick="t_add('🍇')">🍇</a> 
+    <a onclick="t_add('🍈')">🍈</a> 
+    <a onclick="t_add('🍉')">🍉</a> 
+    <a onclick="t_add('🍊')">🍊</a> 
+    <a onclick="t_add('🍋')">🍋</a> 
+    <a onclick="t_add('🍌')">🍌</a> 
+    <a onclick="t_add('🍍')">🍍</a> 
+    <a onclick="t_add('🍎')">🍎</a> 
+    <a onclick="t_add('🍏')">🍏</a> 
+    <a onclick="t_add('🍐')">🍐</a> 
+    <a onclick="t_add('🍑')">🍑</a> 
+    <a onclick="t_add('🍒')">🍒</a> 
+    <a onclick="t_add('🍓')">🍓</a> 
+    <a onclick="t_add('🥝')">🥝</a> 
+    <a onclick="t_add('🍅')">🍅</a> 
+    <a onclick="t_add('🥥')">🥥</a> 
+    <a onclick="t_add('🥑')">🥑</a> 
+    <a onclick="t_add('🍆')">🍆</a> 
+    <a onclick="t_add('🥔')">🥔</a> 
+    <a onclick="t_add('🥕')">🥕</a> 
+    <a onclick="t_add('🌽')">🌽</a> 
+    <a onclick="t_add('🌶️')">🌶️</a> 
+    <a onclick="t_add('🥒')">🥒</a> 
+    <a onclick="t_add('🥦')">🥦</a> 
+    <a onclick="t_add('🥜')">🥜</a> 
+    <a onclick="t_add('🌰')">🌰</a> 
+    <a onclick="t_add('🍞')">🍞</a> 
+    <a onclick="t_add('🥐')">🥐</a> 
+    <a onclick="t_add('🥖')">🥖</a> 
+    <a onclick="t_add('🥨')">🥨</a> 
+    <a onclick="t_add('🥞')">🥞</a> 
+    <a onclick="t_add('🧀')">🧀</a> 
+    <a onclick="t_add('🍖')">🍖</a> 
+    <a onclick="t_add('🍗')">🍗</a> 
+    <a onclick="t_add('🥩')">🥩</a> 
+    <a onclick="t_add('🥓')">🥓</a> 
+    <a onclick="t_add('🍔')">🍔</a> 
+    <a onclick="t_add('🍟')">🍟</a> 
+    <a onclick="t_add('🍕')">🍕</a> 
+    <a onclick="t_add('🌭')">🌭</a> 
+    <a onclick="t_add('🥪')">🥪</a> 
+    <a onclick="t_add('🌮')">🌮</a> 
+    <a onclick="t_add('🌯')">🌯</a> 
+    <a onclick="t_add('🥙')">🥙</a> 
+    <a onclick="t_add('🥚')">🥚</a> 
+    <a onclick="t_add('🍳')">🍳</a> 
+    <a onclick="t_add('🥘')">🥘</a> 
+    <a onclick="t_add('🍲')">🍲</a> 
+    <a onclick="t_add('🥣')">🥣</a> 
+    <a onclick="t_add('🥗')">🥗</a> 
+    <a onclick="t_add('🍿')">🍿</a> 
+    <a onclick="t_add('🥫')">🥫</a> 
+    <a onclick="t_add('🍱')">🍱</a> 
+    <a onclick="t_add('🍘')">🍘</a> 
+    <a onclick="t_add('🍙')">🍙</a> 
+    <a onclick="t_add('🍚')">🍚</a> 
+    <a onclick="t_add('🍛')">🍛</a> 
+    <a onclick="t_add('🍜')">🍜</a> 
+    <a onclick="t_add('🍝')">🍝</a> 
+    <a onclick="t_add('🍠')">🍠</a> 
+    <a onclick="t_add('🍢')">🍢</a> 
+    <a onclick="t_add('🍣')">🍣</a> 
+    <a onclick="t_add('🍤')">🍤</a> 
+    <a onclick="t_add('🍥')">🍥</a> 
+    <a onclick="t_add('🍡')">🍡</a> 
+    <a onclick="t_add('🥟')">🥟</a> 
+    <a onclick="t_add('🥠')">🥠</a> 
+    <a onclick="t_add('🥡')">🥡</a> 
+    <a onclick="t_add('🍦')">🍦</a> 
+    <a onclick="t_add('🍧')">🍧</a> 
+    <a onclick="t_add('🍨')">🍨</a> 
+    <a onclick="t_add('🍩')">🍩</a> 
+    <a onclick="t_add('🍪')">🍪</a> 
+    <a onclick="t_add('🎂')">🎂</a> 
+    <a onclick="t_add('🍰')">🍰</a> 
+    <a onclick="t_add('🥧')">🥧</a> 
+    <a onclick="t_add('🍫')">🍫</a> 
+    <a onclick="t_add('🍬')">🍬</a> 
+    <a onclick="t_add('🍭')">🍭</a> 
+    <a onclick="t_add('🍮')">🍮</a> 
+    <a onclick="t_add('🍯')">🍯</a> 
+    <a onclick="t_add('🍼')">🍼</a> 
+    <a onclick="t_add('🥛')">🥛</a> 
+    <a onclick="t_add('☕')">☕</a> 
+    <a onclick="t_add('🍵')">🍵</a> 
+    <a onclick="t_add('🍶')">🍶</a> 
+    <a onclick="t_add('🍾')">🍾</a> 
+    <a onclick="t_add('🍷')">🍷</a> 
+    <a onclick="t_add('🍸')">🍸</a> 
+    <a onclick="t_add('🍹')">🍹</a> 
+    <a onclick="t_add('🍺')">🍺</a> 
+    <a onclick="t_add('🍻')">🍻</a> 
+    <a onclick="t_add('🥂')">🥂</a> 
+    <a onclick="t_add('🥃')">🥃</a> 
+    <a onclick="t_add('🥤')">🥤</a> 
+    <a onclick="t_add('🥢')">🥢</a> 
+    <a onclick="t_add('🍽️')">🍽️</a> 
+    <a onclick="t_add('🍴')">🍴</a> 
+    <a onclick="t_add('🥄')">🥄</a> 
+    <a onclick="t_add('🏺')">🏺</a> 
+
+
+    <span class="title">Animals</span> 
+    <a onclick="t_add('😺')">😺</a> 
+    <a onclick="t_add('😸')">😸</a> 
+    <a onclick="t_add('😹')">😹</a> 
+    <a onclick="t_add('😻')">😻</a> 
+    <a onclick="t_add('😼')">😼</a> 
+    <a onclick="t_add('😽')">😽</a> 
+    <a onclick="t_add('🙀')">🙀</a> 
+    <a onclick="t_add('😿')">😿</a> 
+    <a onclick="t_add('😾')">😾</a> 
+    <a onclick="t_add('🙈')">🙈</a> 
+    <a onclick="t_add('🙉')">🙉</a> 
+    <a onclick="t_add('🐵')">🐵</a> 
+    <a onclick="t_add('🐒')">🐒</a> 
+    <a onclick="t_add('🦍')">🦍</a> 
+    <a onclick="t_add('🐶')">🐶</a> 
+    <a onclick="t_add('🐕')">🐕</a> 
+    <a onclick="t_add('🐩')">🐩</a> 
+    <a onclick="t_add('🐺')">🐺</a> 
+    <a onclick="t_add('🦊')">🦊</a> 
+    <a onclick="t_add('🐱')">🐱</a> 
+    <a onclick="t_add('🐈')">🐈</a> 
+    <a onclick="t_add('🦁')">🦁</a> 
+    <a onclick="t_add('🐯')">🐯</a> 
+    <a onclick="t_add('🐅')">🐅</a> 
+    <a onclick="t_add('🐆')">🐆</a> 
+    <a onclick="t_add('🐴')">🐴</a> 
+    <a onclick="t_add('🐎')">🐎</a> 
+    <a onclick="t_add('🦄')">🦄</a> 
+    <a onclick="t_add('🦓')">🦓</a> 
+    <a onclick="t_add('🦌')">🦌</a> 
+    <a onclick="t_add('🐮')">🐮</a> 
+    <a onclick="t_add('🐂')">🐂</a> 
+    <a onclick="t_add('🐃')">🐃</a> 
+    <a onclick="t_add('🐄')">🐄</a> 
+    <a onclick="t_add('🐷')">🐷</a> 
+    <a onclick="t_add('🐖')">🐖</a> 
+    <a onclick="t_add('🐗')">🐗</a> 
+    <a onclick="t_add('🐽')">🐽</a> 
+    <a onclick="t_add('🐏')">🐏</a> 
+    <a onclick="t_add('🐑')">🐑</a> 
+    <a onclick="t_add('🐐')">🐐</a> 
+    <a onclick="t_add('🐪')">🐪</a> 
+    <a onclick="t_add('🐫')">🐫</a> 
+    <a onclick="t_add('🦒')">🦒</a> 
+    <a onclick="t_add('🐘')">🐘</a> 
+    <a onclick="t_add('🦏')">🦏</a> 
+    <a onclick="t_add('🐭')">🐭</a> 
+    <a onclick="t_add('🐁')">🐁</a> 
+    <a onclick="t_add('🐀')">🐀</a> 
+    <a onclick="t_add('🐹')">🐹</a> 
+    <a onclick="t_add('🐰')">🐰</a> 
+    <a onclick="t_add('🐇')">🐇</a> 
+    <a onclick="t_add('🐿️')">🐿️</a> 
+    <a onclick="t_add('🦔')">🦔</a> 
+    <a onclick="t_add('🦇')">🦇</a> 
+    <a onclick="t_add('🐻')">🐻</a> 
+    <a onclick="t_add('🐨')">🐨</a> 
+    <a onclick="t_add('🐼')">🐼</a> 
+    <a onclick="t_add('🐾')">🐾</a> 
+    <a onclick="t_add('🦃')">🦃</a> 
+    <a onclick="t_add('🐔')">🐔</a> 
+    <a onclick="t_add('🐓')">🐓</a> 
+    <a onclick="t_add('🐣')">🐣</a> 
+    <a onclick="t_add('🐤')">🐤</a> 
+    <a onclick="t_add('🐥')">🐥</a> 
+    <a onclick="t_add('🐦')">🐦</a> 
+    <a onclick="t_add('🐧')">🐧</a> 
+    <a onclick="t_add('🕊️')">🕊️</a> 
+    <a onclick="t_add('🦅')">🦅</a> 
+    <a onclick="t_add('🦆')">🦆</a> 
+    <a onclick="t_add('🦉')">🦉</a> 
+    <a onclick="t_add('🐸')">🐸</a> 
+    <a onclick="t_add('🐊')">🐊</a> 
+    <a onclick="t_add('🐢')">🐢</a> 
+    <a onclick="t_add('🦎')">🦎</a> 
+    <a onclick="t_add('🐍')">🐍</a> 
+    <a onclick="t_add('🐲')">🐲</a> 
+    <a onclick="t_add('🐉')">🐉</a> 
+    <a onclick="t_add('🦕')">🦕</a> 
+    <a onclick="t_add('🦖')">🦖</a> 
+    <a onclick="t_add('🐳')">🐳</a> 
+    <a onclick="t_add('🐋')">🐋</a> 
+    <a onclick="t_add('🐬')">🐬</a> 
+    <a onclick="t_add('🐟')">🐟</a> 
+    <a onclick="t_add('🐠')">🐠</a> 
+    <a onclick="t_add('🐡')">🐡</a> 
+    <a onclick="t_add('🦈')">🦈</a> 
+    <a onclick="t_add('🐙')">🐙</a> 
+    <a onclick="t_add('🐚')">🐚</a> 
+    <a onclick="t_add('🦀')">🦀</a> 
+    <a onclick="t_add('🦐')">🦐</a> 
+    <a onclick="t_add('🦑')">🦑</a> 
+    <a onclick="t_add('🐌')">🐌</a> 
+    <a onclick="t_add('🦋')">🦋</a> 
+    <a onclick="t_add('🐛')">🐛</a> 
+    <a onclick="t_add('🐜')">🐜</a> 
+    <a onclick="t_add('🐝')">🐝</a> 
+    <a onclick="t_add('🐞')">🐞</a> 
+    <a onclick="t_add('🦗')">🦗</a> 
+    <a onclick="t_add('🕷️')">🕷️</a> 
+    <a onclick="t_add('🕸️')">🕸️</a> 
+    <a onclick="t_add('🦂')">🦂</a> 
+
+
+    <span class="title">Nature</span> 
+    <a onclick="t_add('🌸')">🌸</a> 
+    <a onclick="t_add('💮')">💮</a> 
+    <a onclick="t_add('🏵️')">🏵️</a> 
+    <a onclick="t_add('🌹')">🌹</a> 
+    <a onclick="t_add('🥀')">🥀</a> 
+    <a onclick="t_add('🌺')">🌺</a> 
+    <a onclick="t_add('🌻')">🌻</a> 
+    <a onclick="t_add('🌼')">🌼</a> 
+    <a onclick="t_add('🌷')">🌷</a> 
+    <a onclick="t_add('🌱')">🌱</a> 
+    <a onclick="t_add('🌲')">🌲</a> 
+    <a onclick="t_add('🌳')">🌳</a> 
+    <a onclick="t_add('🌴')">🌴</a> 
+    <a onclick="t_add('🌵')">🌵</a> 
+    <a onclick="t_add('🌾')">🌾</a> 
+    <a onclick="t_add('🌿')">🌿</a> 
+    <a onclick="t_add('☘️')">☘️</a> 
+    <a onclick="t_add('🍀')">🍀</a> 
+    <a onclick="t_add('🍁')">🍁</a> 
+    <a onclick="t_add('🍂')">🍂</a> 
+    <a onclick="t_add('🍃')">🍃</a> 
+    <a onclick="t_add('🍄')">🍄</a> 
+
+
+    <span class="title">Pictograms</span> 
+    <a onclick="t_add('⌛')">⌛</a> 
+    <a onclick="t_add('⏳')">⏳</a> 
+    <a onclick="t_add('⚡')">⚡</a> 
+    <a onclick="t_add('🎆')">🎆</a> 
+    <a onclick="t_add('🎇')">🎇</a> 
+    <a onclick="t_add('🔇')">🔇</a> 
+    <a onclick="t_add('🔈')">🔈</a> 
+    <a onclick="t_add('🔉')">🔉</a> 
+    <a onclick="t_add('🔊')">🔊</a> 
+    <a onclick="t_add('🔕')">🔕</a> 
+    <a onclick="t_add('🔒')">🔒</a> 
+    <a onclick="t_add('🔓')">🔓</a> 
+    <a onclick="t_add('🔏')">🔏</a> 
+    <a onclick="t_add('🔐')">🔐</a> 
+    <a onclick="t_add('🚮')">🚮</a> 
+    <a onclick="t_add('🚰')">🚰</a> 
+    <a onclick="t_add('♿')">♿</a> 
+    <a onclick="t_add('🚹')">🚹</a> 
+    <a onclick="t_add('🚺')">🚺</a> 
+    <a onclick="t_add('🚻')">🚻</a> 
+    <a onclick="t_add('🚼')">🚼</a> 
+    <a onclick="t_add('🚾')">🚾</a> 
+    <a onclick="t_add('🛂')">🛂</a> 
+    <a onclick="t_add('🛃')">🛃</a> 
+    <a onclick="t_add('🛄')">🛄</a> 
+    <a onclick="t_add('🛅')">🛅</a> 
+    <a onclick="t_add('⚠️')">⚠️</a> 
+    <a onclick="t_add('🚸')">🚸</a> 
+    <a onclick="t_add('⛔')">⛔</a> 
+    <a onclick="t_add('🚫')">🚫</a> 
+    <a onclick="t_add('🚳')">🚳</a> 
+    <a onclick="t_add('🚭')">🚭</a> 
+    <a onclick="t_add('🚯')">🚯</a> 
+    <a onclick="t_add('🚱')">🚱</a> 
+    <a onclick="t_add('🚷')">🚷</a> 
+    <a onclick="t_add('📵')">📵</a> 
+    <a onclick="t_add('🔞')">🔞</a> 
+    <a onclick="t_add('⏭️')">⏭️</a> 
+    <a onclick="t_add('⏯️')">⏯️</a> 
+    <a onclick="t_add('⏮️')">⏮️</a> 
+    <a onclick="t_add('⏸️')">⏸️</a> 
+    <a onclick="t_add('⏹️')">⏹️</a> 
+    <a onclick="t_add('⏺️')">⏺️</a> 
+    <a onclick="t_add('⏏️')">⏏️</a> 
+    <a onclick="t_add('🎦')">🎦</a> 
+    <a onclick="t_add('🔅')">🔅</a> 
+    <a onclick="t_add('🔆')">🔆</a> 
+    <a onclick="t_add('📶')">📶</a> 
+    <a onclick="t_add('📳')">📳</a> 
+    <a onclick="t_add('📴')">📴</a> 
+    <a onclick="t_add('🔱')">🔱</a> 
+    <a onclick="t_add('ℹ️')">ℹ️</a> 
+    <a onclick="t_add('Ⓜ️')">Ⓜ️</a> 
+    <a onclick="t_add('🅿️')">🅿️</a> 
+
+
+    <span class="title">Arrows</span> 
+    <a onclick="t_add('⬆️')">⬆️</a> 
+    <a onclick="t_add('↗️')">↗️</a> 
+    <a onclick="t_add('➡️')">➡️</a> 
+    <a onclick="t_add('↘️')">↘️</a> 
+    <a onclick="t_add('⬇️')">⬇️</a> 
+    <a onclick="t_add('↙️')">↙️</a> 
+    <a onclick="t_add('⬅️')">⬅️</a> 
+    <a onclick="t_add('↖️')">↖️</a> 
+    <a onclick="t_add('↕️')">↕️</a> 
+    <a onclick="t_add('↔️')">↔️</a> 
+    <a onclick="t_add('↩️')">↩️</a> 
+    <a onclick="t_add('↪️')">↪️</a> 
+    <a onclick="t_add('⤴️')">⤴️</a> 
+    <a onclick="t_add('⤵️')">⤵️</a> 
+    <a onclick="t_add('🔃')">🔃</a> 
+    <a onclick="t_add('🔄')">🔄</a> 
+    <a onclick="t_add('🔀')">🔀</a> 
+    <a onclick="t_add('🔁')">🔁</a> 
+    <a onclick="t_add('🔂')">🔂</a> 
+    <a onclick="t_add('▶️')">▶️</a> 
+    <a onclick="t_add('⏩')">⏩</a> 
+    <a onclick="t_add('◀️')">◀️</a> 
+    <a onclick="t_add('⏪')">⏪</a> 
+    <a onclick="t_add('🔼')">🔼</a> 
+    <a onclick="t_add('⏫')">⏫</a> 
+    <a onclick="t_add('🔽')">🔽</a> 
+    <a onclick="t_add('⏬')">⏬</a> 
+
+
+    <span class="title">Objects</span> 
+    <a onclick="t_add('🛀')">🛀</a> 
+    <a onclick="t_add('👣')">👣</a> 
+    <a onclick="t_add('💣')">💣</a> 
+    <a onclick="t_add('🔪')">🔪</a> 
+    <a onclick="t_add('🛢️')">🛢️</a> 
+    <a onclick="t_add('⛽')">⛽</a> 
+    <a onclick="t_add('🚥')">🚥</a> 
+    <a onclick="t_add('🚦')">🚦</a> 
+    <a onclick="t_add('🚧')">🚧</a> 
+    <a onclick="t_add('🛎️')">🛎️</a> 
+    <a onclick="t_add('⛱️')">⛱️</a> 
+    <a onclick="t_add('🔥')">🔥</a> 
+    <a onclick="t_add('🎗️')">🎗️</a> 
+    <a onclick="t_add('🎟️')">🎟️</a> 
+    <a onclick="t_add('🎫')">🎫</a> 
+    <a onclick="t_add('🔮')">🔮</a> 
+    <a onclick="t_add('🎲')">🎲</a> 
+    <a onclick="t_add('🎴')">🎴</a> 
+    <a onclick="t_add('🎭')">🎭</a> 
+    <a onclick="t_add('🖼️')">🖼️</a> 
+    <a onclick="t_add('🎨')">🎨</a> 
+    <a onclick="t_add('🎤')">🎤</a> 
+    <a onclick="t_add('🔍')">🔍</a> 
+    <a onclick="t_add('🔎')">🔎</a> 
+    <a onclick="t_add('🕯️')">🕯️</a> 
+    <a onclick="t_add('💡')">💡</a> 
+    <a onclick="t_add('🔦')">🔦</a> 
+    <a onclick="t_add('🏮')">🏮</a> 
+    <a onclick="t_add('📜')">📜</a> 
+    <a onclick="t_add('🔑')">🔑</a> 
+    <a onclick="t_add('🗝️')">🗝️</a> 
+    <a onclick="t_add('🔨')">🔨</a> 
+    <a onclick="t_add('⛏️')">⛏️</a> 
+    <a onclick="t_add('⚒️')">⚒️</a> 
+    <a onclick="t_add('🛠️')">🛠️</a> 
+    <a onclick="t_add('🗡️')">🗡️</a> 
+    <a onclick="t_add('⚔️')">⚔️</a> 
+    <a onclick="t_add('🔫')">🔫</a> 
+    <a onclick="t_add('🏹')">🏹</a> 
+    <a onclick="t_add('🛡️')">🛡️</a> 
+    <a onclick="t_add('🔧')">🔧</a> 
+    <a onclick="t_add('🔩')">🔩</a> 
+    <a onclick="t_add('⚙️')">⚙️</a> 
+    <a onclick="t_add('🗜️')">🗜️</a> 
+    <a onclick="t_add('⚖️')">⚖️</a> 
+    <a onclick="t_add('⛓️')">⛓️</a> 
+    <a onclick="t_add('⚗️')">⚗️</a> 
+    <a onclick="t_add('🔬')">🔬</a> 
+    <a onclick="t_add('🔭')">🔭</a> 
+    <a onclick="t_add('📡')">📡</a> 
+    <a onclick="t_add('💉')">💉</a> 
+    <a onclick="t_add('💊')">💊</a> 
+    <a onclick="t_add('🚪')">🚪</a> 
+    <a onclick="t_add('🛏️')">🛏️</a> 
+    <a onclick="t_add('🛋️')">🛋️</a> 
+    <a onclick="t_add('🚽')">🚽</a> 
+    <a onclick="t_add('🚿')">🚿</a> 
+    <a onclick="t_add('🛁')">🛁</a> 
+    <a onclick="t_add('🛒')">🛒</a> 
+    <a onclick="t_add('🚬')">🚬</a> 
+    <a onclick="t_add('⚰️')">⚰️</a> 
+    <a onclick="t_add('⚱️')">⚱️</a> 
+    <a onclick="t_add('💠')">💠</a> 
+
+
+    <span class="title">Computer & Desktop</span> 
+    <a onclick="t_add('💺')">💺</a> 
+    <a onclick="t_add('🎮')">🎮</a> 
+    <a onclick="t_add('🕹️')">🕹️</a> 
+    <a onclick="t_add('🎰')">🎰</a> 
+    <a onclick="t_add('📱')">📱</a> 
+    <a onclick="t_add('📲')">📲</a> 
+    <a onclick="t_add('☎️')">☎️</a> 
+    <a onclick="t_add('📞')">📞</a> 
+    <a onclick="t_add('📟')">📟</a> 
+    <a onclick="t_add('📠')">📠</a> 
+    <a onclick="t_add('💻')">💻</a> 
+    <a onclick="t_add('🖥️')">🖥️</a> 
+    <a onclick="t_add('🖨️')">🖨️</a> 
+    <a onclick="t_add('⌨️')">⌨️</a> 
+    <a onclick="t_add('🖱️')">🖱️</a> 
+    <a onclick="t_add('🖲️')">🖲️</a> 
+    <a onclick="t_add('💾')">💾</a> 
+    <a onclick="t_add('📔')">📔</a> 
+    <a onclick="t_add('📕')">📕</a> 
+    <a onclick="t_add('📖')">📖</a> 
+    <a onclick="t_add('📗')">📗</a> 
+    <a onclick="t_add('📘')">📘</a> 
+    <a onclick="t_add('📙')">📙</a> 
+    <a onclick="t_add('📚')">📚</a> 
+    <a onclick="t_add('📓')">📓</a> 
+    <a onclick="t_add('📒')">📒</a> 
+    <a onclick="t_add('📃')">📃</a> 
+    <a onclick="t_add('📄')">📄</a> 
+    <a onclick="t_add('📰')">📰</a> 
+    <a onclick="t_add('🗞️')">🗞️</a> 
+    <a onclick="t_add('📑')">📑</a> 
+    <a onclick="t_add('🔖')">🔖</a> 
+    <a onclick="t_add('🏷️')">🏷️</a> 
+    <a onclick="t_add('💰')">💰</a> 
+    <a onclick="t_add('💴')">💴</a> 
+    <a onclick="t_add('💵')">💵</a> 
+    <a onclick="t_add('💶')">💶</a> 
+    <a onclick="t_add('💷')">💷</a> 
+    <a onclick="t_add('💸')">💸</a> 
+    <a onclick="t_add('💳')">💳</a> 
+    <a onclick="t_add('💹')">💹</a> 
+    <a onclick="t_add('💱')">💱</a> 
+    <a onclick="t_add('✉️')">✉️</a> 
+    <a onclick="t_add('📧')">📧</a> 
+    <a onclick="t_add('📨')">📨</a> 
+    <a onclick="t_add('📩')">📩</a> 
+    <a onclick="t_add('📤')">📤</a> 
+    <a onclick="t_add('📥')">📥</a> 
+    <a onclick="t_add('📦')">📦</a> 
+    <a onclick="t_add('📫')">📫</a> 
+    <a onclick="t_add('📪')">📪</a> 
+    <a onclick="t_add('📬')">📬</a> 
+    <a onclick="t_add('📭')">📭</a> 
+    <a onclick="t_add('📮')">📮</a> 
+    <a onclick="t_add('🗳️')">🗳️</a> 
+    <a onclick="t_add('✏️')">✏️</a> 
+    <a onclick="t_add('✒️')">✒️</a> 
+    <a onclick="t_add('🖋️')">🖋️</a> 
+    <a onclick="t_add('🖊️')">🖊️</a> 
+    <a onclick="t_add('🖌️')">🖌️</a> 
+    <a onclick="t_add('🖍️')">🖍️</a> 
+    <a onclick="t_add('📝')">📝</a> 
+    <a onclick="t_add('💼')">💼</a> 
+    <a onclick="t_add('📁')">📁</a> 
+    <a onclick="t_add('📂')">📂</a> 
+    <a onclick="t_add('🗂️')">🗂️</a> 
+    <a onclick="t_add('📅')">📅</a> 
+    <a onclick="t_add('📆')">📆</a> 
+    <a onclick="t_add('🗒️')">🗒️</a> 
+    <a onclick="t_add('🗓️')">🗓️</a> 
+    <a onclick="t_add('📇')">📇</a> 
+    <a onclick="t_add('📈')">📈</a> 
+    <a onclick="t_add('📉')">📉</a> 
+    <a onclick="t_add('📊')">📊</a> 
+    <a onclick="t_add('📋')">📋</a> 
+    <a onclick="t_add('📌')">📌</a> 
+    <a onclick="t_add('📍')">📍</a> 
+    <a onclick="t_add('📎')">📎</a> 
+    <a onclick="t_add('🖇️')">🖇️</a> 
+    <a onclick="t_add('📏')">📏</a> 
+    <a onclick="t_add('📐')">📐</a> 
+    <a onclick="t_add('✂️')">✂️</a> 
+    <a onclick="t_add('🗃️')">🗃️</a> 
+    <a onclick="t_add('🗄️')">🗄️</a> 
+    <a onclick="t_add('🗑️')">🗑️</a> 
+
+
+    <span class="title">Clothes</span> 
+    <a onclick="t_add('💅')">💅</a> 
+    <a onclick="t_add('👓')">👓</a> 
+    <a onclick="t_add('🕶️')">🕶️</a> 
+    <a onclick="t_add('👔')">👔</a> 
+    <a onclick="t_add('👕')">👕</a> 
+    <a onclick="t_add('👖')">👖</a> 
+    <a onclick="t_add('🧣')">🧣</a> 
+    <a onclick="t_add('🧤')">🧤</a> 
+    <a onclick="t_add('🧥')">🧥</a> 
+    <a onclick="t_add('🧦')">🧦</a> 
+    <a onclick="t_add('👗')">👗</a> 
+    <a onclick="t_add('👘')">👘</a> 
+    <a onclick="t_add('👙')">👙</a> 
+    <a onclick="t_add('👚')">👚</a> 
+    <a onclick="t_add('👛')">👛</a> 
+    <a onclick="t_add('👜')">👜</a> 
+    <a onclick="t_add('👝')">👝</a> 
+    <a onclick="t_add('🛍️')">🛍️</a> 
+    <a onclick="t_add('🎒')">🎒</a> 
+    <a onclick="t_add('👞')">👞</a> 
+    <a onclick="t_add('👟')">👟</a> 
+    <a onclick="t_add('👠')">👠</a> 
+    <a onclick="t_add('👡')">👡</a> 
+    <a onclick="t_add('👢')">👢</a> 
+    <a onclick="t_add('👑')">👑</a> 
+    <a onclick="t_add('👒')">👒</a> 
+    <a onclick="t_add('🎩')">🎩</a> 
+    <a onclick="t_add('🎓')">🎓</a> 
+    <a onclick="t_add('🧢')">🧢</a> 
+    <a onclick="t_add('⛑️')">⛑️</a> 
+    <a onclick="t_add('📿')">📿</a> 
+    <a onclick="t_add('💄')">💄</a> 
+    <a onclick="t_add('🌂')">🌂</a> 
+    <a onclick="t_add('☂️')">☂️</a> 
+    <a onclick="t_add('🎽')">🎽</a> 
+
+
+    <span class="title">Transport</span> 
+    <a onclick="t_add('🚂')">🚂</a> 
+    <a onclick="t_add('🚃')">🚃</a> 
+    <a onclick="t_add('🚄')">🚄</a> 
+    <a onclick="t_add('🚅')">🚅</a> 
+    <a onclick="t_add('🚆')">🚆</a> 
+    <a onclick="t_add('🚇')">🚇</a> 
+    <a onclick="t_add('🚈')">🚈</a> 
+    <a onclick="t_add('🚉')">🚉</a> 
+    <a onclick="t_add('🚊')">🚊</a> 
+    <a onclick="t_add('🚝')">🚝</a> 
+    <a onclick="t_add('🚞')">🚞</a> 
+    <a onclick="t_add('🚋')">🚋</a> 
+    <a onclick="t_add('🚌')">🚌</a> 
+    <a onclick="t_add('🚍')">🚍</a> 
+    <a onclick="t_add('🚎')">🚎</a> 
+    <a onclick="t_add('🚐')">🚐</a> 
+    <a onclick="t_add('🚑')">🚑</a> 
+    <a onclick="t_add('🚒')">🚒</a> 
+    <a onclick="t_add('🚓')">🚓</a> 
+    <a onclick="t_add('🚔')">🚔</a> 
+    <a onclick="t_add('🚕')">🚕</a> 
+    <a onclick="t_add('🚖')">🚖</a> 
+    <a onclick="t_add('🚗')">🚗</a> 
+    <a onclick="t_add('🚘')">🚘</a> 
+    <a onclick="t_add('🚙')">🚙</a> 
+    <a onclick="t_add('🚚')">🚚</a> 
+    <a onclick="t_add('🚛')">🚛</a> 
+    <a onclick="t_add('🚜')">🚜</a> 
+    <a onclick="t_add('🚲')">🚲</a> 
+    <a onclick="t_add('🛴')">🛴</a> 
+    <a onclick="t_add('🛵')">🛵</a> 
+    <a onclick="t_add('🚏')">🚏</a> 
+    <a onclick="t_add('🛣️')">🛣️</a> 
+    <a onclick="t_add('🛤️')">🛤️</a> 
+    <a onclick="t_add('⛵')">⛵</a> 
+    <a onclick="t_add('🛶')">🛶</a> 
+    <a onclick="t_add('🚤')">🚤</a> 
+    <a onclick="t_add('🛳️')">🛳️</a> 
+    <a onclick="t_add('⛴️')">⛴️</a> 
+    <a onclick="t_add('🛥️')">🛥️</a> 
+    <a onclick="t_add('🚢')">🚢</a> 
+    <a onclick="t_add('✈️')">✈️</a> 
+    <a onclick="t_add('🛩️')">🛩️</a> 
+    <a onclick="t_add('🛫')">🛫</a> 
+    <a onclick="t_add('🛬')">🛬</a> 
+    <a onclick="t_add('🚁')">🚁</a> 
+    <a onclick="t_add('🚟')">🚟</a> 
+    <a onclick="t_add('🚠')">🚠</a> 
+    <a onclick="t_add('🚡')">🚡</a> 
+    <a onclick="t_add('🛰️')">🛰️</a> 
+    <a onclick="t_add('🚀')">🚀</a> 
+    <a onclick="t_add('🛸')">🛸</a> 
+
+
+    <span class="title">Place</span> 
+    <a onclick="t_add('🌍')">🌍</a> 
+    <a onclick="t_add('🌎')">🌎</a> 
+    <a onclick="t_add('🌏')">🌏</a> 
+    <a onclick="t_add('🌐')">🌐</a> 
+    <a onclick="t_add('🗺️')">🗺️</a> 
+    <a onclick="t_add('🗾')">🗾</a> 
+    <a onclick="t_add('🏔️')">🏔️</a> 
+    <a onclick="t_add('⛰️')">⛰️</a> 
+    <a onclick="t_add('🗻')">🗻</a> 
+    <a onclick="t_add('🏕️')">🏕️</a> 
+    <a onclick="t_add('🏖️')">🏖️</a> 
+    <a onclick="t_add('🏜️')">🏜️</a> 
+    <a onclick="t_add('🏝️')">🏝️</a> 
+    <a onclick="t_add('🏞️')">🏞️</a> 
+    <a onclick="t_add('🏟️')">🏟️</a> 
+    <a onclick="t_add('🏛️')">🏛️</a> 
+    <a onclick="t_add('🏗️')">🏗️</a> 
+    <a onclick="t_add('🏘️')">🏘️</a> 
+    <a onclick="t_add('🏚️')">🏚️</a> 
+    <a onclick="t_add('🏠')">🏠</a> 
+    <a onclick="t_add('🏡')">🏡</a> 
+    <a onclick="t_add('🏢')">🏢</a> 
+    <a onclick="t_add('🏣')">🏣</a> 
+    <a onclick="t_add('🏤')">🏤</a> 
+    <a onclick="t_add('🏥')">🏥</a> 
+    <a onclick="t_add('🏦')">🏦</a> 
+    <a onclick="t_add('🏨')">🏨</a> 
+    <a onclick="t_add('🏩')">🏩</a> 
+    <a onclick="t_add('🏪')">🏪</a> 
+    <a onclick="t_add('🏫')">🏫</a> 
+    <a onclick="t_add('🏬')">🏬</a> 
+    <a onclick="t_add('🏭')">🏭</a> 
+    <a onclick="t_add('🏯')">🏯</a> 
+    <a onclick="t_add('🏰')">🏰</a> 
+    <a onclick="t_add('🗼')">🗼</a> 
+    <a onclick="t_add('🗽')">🗽</a> 
+    <a onclick="t_add('⛪')">⛪</a> 
+    <a onclick="t_add('🕌')">🕌</a> 
+    <a onclick="t_add('🕍')">🕍</a> 
+    <a onclick="t_add('⛩️')">⛩️</a> 
+    <a onclick="t_add('🕋')">🕋</a> 
+    <a onclick="t_add('⛲')">⛲</a> 
+    <a onclick="t_add('⛺')">⛺</a> 
+    <a onclick="t_add('🏙️')">🏙️</a> 
+    <a onclick="t_add('🎠')">🎠</a> 
+    <a onclick="t_add('🎡')">🎡</a> 
+    <a onclick="t_add('🎢')">🎢</a> 
+    <a onclick="t_add('🎪')">🎪</a> 
+    <a onclick="t_add('⛳')">⛳</a> 
+    <a onclick="t_add('🗿')">🗿</a> 
+
+
+    <span class="title">Weather</span> 
+    <a onclick="t_add('💦')">💦</a> 
+    <a onclick="t_add('🌋')">🌋</a> 
+    <a onclick="t_add('🌁')">🌁</a> 
+    <a onclick="t_add('🌃')">🌃</a> 
+    <a onclick="t_add('🌄')">🌄</a> 
+    <a onclick="t_add('🌅')">🌅</a> 
+    <a onclick="t_add('🌆')">🌆</a> 
+    <a onclick="t_add('🌇')">🌇</a> 
+    <a onclick="t_add('🌉')">🌉</a> 
+    <a onclick="t_add('🌌')">🌌</a> 
+    <a onclick="t_add('🌑')">🌑</a> 
+    <a onclick="t_add('🌒')">🌒</a> 
+    <a onclick="t_add('🌓')">🌓</a> 
+    <a onclick="t_add('🌔')">🌔</a> 
+    <a onclick="t_add('🌕')">🌕</a> 
+    <a onclick="t_add('🌖')">🌖</a> 
+    <a onclick="t_add('🌗')">🌗</a> 
+    <a onclick="t_add('🌘')">🌘</a> 
+    <a onclick="t_add('🌙')">🌙</a> 
+    <a onclick="t_add('🌚')">🌚</a> 
+    <a onclick="t_add('🌛')">🌛</a> 
+    <a onclick="t_add('🌜')">🌜</a> 
+    <a onclick="t_add('🌡️')">🌡️</a> 
+    <a onclick="t_add('☀️')">☀️</a> 
+    <a onclick="t_add('🌝')">🌝</a> 
+    <a onclick="t_add('🌞')">🌞</a> 
+    <a onclick="t_add('🌟')">🌟</a> 
+    <a onclick="t_add('🌠')">🌠</a> 
+    <a onclick="t_add('☁️')">☁️</a> 
+    <a onclick="t_add('⛅')">⛅</a> 
+    <a onclick="t_add('⛈️')">⛈️</a> 
+    <a onclick="t_add('🌤️')">🌤️</a> 
+    <a onclick="t_add('🌥️')">🌥️</a> 
+    <a onclick="t_add('🌦️')">🌦️</a> 
+    <a onclick="t_add('🌧️')">🌧️</a> 
+    <a onclick="t_add('🌨️')">🌨️</a> 
+    <a onclick="t_add('🌩️')">🌩️</a> 
+    <a onclick="t_add('🌪️')">🌪️</a> 
+    <a onclick="t_add('🌫️')">🌫️</a> 
+    <a onclick="t_add('🌬️')">🌬️</a> 
+    <a onclick="t_add('🌀')">🌀</a> 
+    <a onclick="t_add('🌈')">🌈</a> 
+    <a onclick="t_add('☔')">☔</a> 
+    <a onclick="t_add('❄️')">❄️</a> 
+    <a onclick="t_add('☃️')">☃️</a> 
+    <a onclick="t_add('⛄')">⛄</a> 
+    <a onclick="t_add('☄️')">☄️</a> 
+    <a onclick="t_add('💧')">💧</a> 
+    <a onclick="t_add('🌊')">🌊</a> 
+    <a onclick="t_add('🎑')">🎑</a> 
+
+
+    <span class="title">Clock</span> 
+    <a onclick="t_add('⌚')">⌚</a> 
+    <a onclick="t_add('⏰')">⏰</a> 
+    <a onclick="t_add('⏱️')">⏱️</a> 
+    <a onclick="t_add('⏲️')">⏲️</a> 
+    <a onclick="t_add('🕰️')">🕰️</a> 
+    <a onclick="t_add('🕛')">🕛</a> 
+    <a onclick="t_add('🕧')">🕧</a> 
+    <a onclick="t_add('🕐')">🕐</a> 
+    <a onclick="t_add('🕜')">🕜</a> 
+    <a onclick="t_add('🕑')">🕑</a> 
+    <a onclick="t_add('🕝')">🕝</a> 
+    <a onclick="t_add('🕒')">🕒</a> 
+    <a onclick="t_add('🕞')">🕞</a> 
+    <a onclick="t_add('🕓')">🕓</a> 
+    <a onclick="t_add('🕟')">🕟</a> 
+    <a onclick="t_add('🕔')">🕔</a> 
+    <a onclick="t_add('🕠')">🕠</a> 
+    <a onclick="t_add('🕕')">🕕</a> 
+    <a onclick="t_add('🕡')">🕡</a> 
+    <a onclick="t_add('🕖')">🕖</a> 
+    <a onclick="t_add('🕢')">🕢</a> 
+    <a onclick="t_add('🕗')">🕗</a> 
+    <a onclick="t_add('🕣')">🕣</a> 
+    <a onclick="t_add('🕘')">🕘</a> 
+    <a onclick="t_add('🕤')">🕤</a> 
+    <a onclick="t_add('🕙')">🕙</a> 
+    <a onclick="t_add('🕥')">🕥</a> 
+    <a onclick="t_add('🕚')">🕚</a> 
+    <a onclick="t_add('🕦')">🕦</a> 
+
+
+    <span class="title">Text</span> 
+    <a onclick="t_add('🏧')">🏧</a> 
+    <a onclick="t_add('🔙')">🔙</a> 
+    <a onclick="t_add('🔚')">🔚</a> 
+    <a onclick="t_add('🔛')">🔛</a> 
+    <a onclick="t_add('🔜')">🔜</a> 
+    <a onclick="t_add('🔝')">🔝</a> 
+    <a onclick="t_add('🔰')">🔰</a> 
+    <a onclick="t_add('‼️')">‼️</a> 
+    <a onclick="t_add('⁉️')">⁉️</a> 
+    <a onclick="t_add('❓')">❓</a> 
+    <a onclick="t_add('❔')">❔</a> 
+    <a onclick="t_add('❕')">❕</a> 
+    <a onclick="t_add('❗')">❗</a> 
+    <a onclick="t_add('™️')">™️</a> 
+    <a onclick="t_add('#️⃣')">#️⃣</a> 
+    <a onclick="t_add('*️⃣')">*️⃣</a> 
+    <a onclick="t_add('0️⃣')">0️⃣</a> 
+    <a onclick="t_add('1️⃣')">1️⃣</a> 
+    <a onclick="t_add('2️⃣')">2️⃣</a> 
+    <a onclick="t_add('3️⃣')">3️⃣</a> 
+    <a onclick="t_add('4️⃣')">4️⃣</a> 
+    <a onclick="t_add('5️⃣')">5️⃣</a> 
+    <a onclick="t_add('6️⃣')">6️⃣</a> 
+    <a onclick="t_add('7️⃣')">7️⃣</a> 
+    <a onclick="t_add('8️⃣')">8️⃣</a> 
+    <a onclick="t_add('9️⃣')">9️⃣</a> 
+    <a onclick="t_add('🔟')">🔟</a> 
+    <a onclick="t_add('💯')">💯</a> 
+    <a onclick="t_add('🔠')">🔠</a> 
+    <a onclick="t_add('🔡')">🔡</a> 
+    <a onclick="t_add('🔢')">🔢</a> 
+    <a onclick="t_add('🔣')">🔣</a> 
+    <a onclick="t_add('🔤')">🔤</a> 
+    <a onclick="t_add('🅰️')">🅰️</a> 
+    <a onclick="t_add('🆎')">🆎</a> 
+    <a onclick="t_add('🅱️')">🅱️</a> 
+    <a onclick="t_add('🆑')">🆑</a> 
+    <a onclick="t_add('🆒')">🆒</a> 
+    <a onclick="t_add('🆓')">🆓</a> 
+    <a onclick="t_add('🆔')">🆔</a> 
+    <a onclick="t_add('🆕')">🆕</a> 
+    <a onclick="t_add('🆖')">🆖</a> 
+    <a onclick="t_add('🅾️')">🅾️</a> 
+    <a onclick="t_add('🆗')">🆗</a> 
+    <a onclick="t_add('🆘')">🆘</a> 
+    <a onclick="t_add('🆙')">🆙</a> 
+    <a onclick="t_add('🆚')">🆚</a> 
+    <a onclick="t_add('🈁')">🈁</a> 
+    <a onclick="t_add('🈂️')">🈂️</a> 
+    <a onclick="t_add('🈷️')">🈷️</a> 
+    <a onclick="t_add('🈶')">🈶</a> 
+    <a onclick="t_add('🈯')">🈯</a> 
+    <a onclick="t_add('🉐')">🉐</a> 
+    <a onclick="t_add('🈹')">🈹</a> 
+    <a onclick="t_add('🈚')">🈚</a> 
+    <a onclick="t_add('🈲')">🈲</a> 
+    <a onclick="t_add('🉑')">🉑</a> 
+    <a onclick="t_add('🈸')">🈸</a> 
+    <a onclick="t_add('🈴')">🈴</a> 
+    <a onclick="t_add('🈳')">🈳</a> 
+    <a onclick="t_add('㊗️')">㊗️</a> 
+    <a onclick="t_add('㊙️')">㊙️</a> 
+    <a onclick="t_add('🈺')">🈺</a> 
+    <a onclick="t_add('🈵')">🈵</a> 
+    <a onclick="t_add('🇦')">🇦</a> 
+    <a onclick="t_add('🇧')">🇧</a> 
+    <a onclick="t_add('🇨')">🇨</a> 
+    <a onclick="t_add('🇩')">🇩</a> 
+    <a onclick="t_add('🇪')">🇪</a> 
+    <a onclick="t_add('🇫')">🇫</a> 
+    <a onclick="t_add('🇬')">🇬</a> 
+    <a onclick="t_add('🇭')">🇭</a> 
+    <a onclick="t_add('🇮')">🇮</a> 
+    <a onclick="t_add('🇯')">🇯</a> 
+    <a onclick="t_add('🇰')">🇰</a> 
+    <a onclick="t_add('🇱')">🇱</a> 
+    <a onclick="t_add('🇲')">🇲</a> 
+    <a onclick="t_add('🇳')">🇳</a> 
+    <a onclick="t_add('🇴')">🇴</a> 
+    <a onclick="t_add('🇵')">🇵</a> 
+    <a onclick="t_add('🇶')">🇶</a> 
+    <a onclick="t_add('🇷')">🇷</a> 
+    <a onclick="t_add('🇸')">🇸</a> 
+    <a onclick="t_add('🇹')">🇹</a> 
+    <a onclick="t_add('🇺')">🇺</a> 
+    <a onclick="t_add('🇻')">🇻</a> 
+    <a onclick="t_add('🇼')">🇼</a> 
+    <a onclick="t_add('🇽')">🇽</a> 
+    <a onclick="t_add('🇾')">🇾</a> 
+    <a onclick="t_add('🇿')">🇿</a> 
+
+
+    <span class="title">Symbols</span> 
+    <a onclick="t_add('💢')">💢</a> 
+    <a onclick="t_add('♨️')">♨️</a> 
+    <a onclick="t_add('💈')">💈</a> 
+    <a onclick="t_add('⚓')">⚓</a> 
+    <a onclick="t_add('♠️')">♠️</a> 
+    <a onclick="t_add('♥️')">♥️</a> 
+    <a onclick="t_add('♦️')">♦️</a> 
+    <a onclick="t_add('♣️')">♣️</a> 
+    <a onclick="t_add('💲')">💲</a> 
+    <a onclick="t_add('☢️')">☢️</a> 
+    <a onclick="t_add('☣️')">☣️</a> 
+    <a onclick="t_add('🛐')">🛐</a> 
+    <a onclick="t_add('⚛️')">⚛️</a> 
+    <a onclick="t_add('🕉️')">🕉️</a> 
+    <a onclick="t_add('✡️')">✡️</a> 
+    <a onclick="t_add('☸️')">☸️</a> 
+    <a onclick="t_add('☯️')">☯️</a> 
+    <a onclick="t_add('✝️')">✝️</a> 
+    <a onclick="t_add('☦️')">☦️</a> 
+    <a onclick="t_add('☪️')">☪️</a> 
+    <a onclick="t_add('☮️')">☮️</a> 
+    <a onclick="t_add('🕎')">🕎</a> 
+    <a onclick="t_add('🔯')">🔯</a> 
+    <a onclick="t_add('♈')">♈</a> 
+    <a onclick="t_add('♉')">♉</a> 
+    <a onclick="t_add('♊')">♊</a> 
+    <a onclick="t_add('♋')">♋</a> 
+    <a onclick="t_add('♌')">♌</a> 
+    <a onclick="t_add('♍')">♍</a> 
+    <a onclick="t_add('♎')">♎</a> 
+    <a onclick="t_add('♏')">♏</a> 
+    <a onclick="t_add('♐')">♐</a> 
+    <a onclick="t_add('♑')">♑</a> 
+    <a onclick="t_add('♒')">♒</a> 
+    <a onclick="t_add('♓')">♓</a> 
+    <a onclick="t_add('⛎')">⛎</a> 
+    <a onclick="t_add('♀️')">♀️</a> 
+    <a onclick="t_add('♂️')">♂️</a> 
+    <a onclick="t_add('⚕️')">⚕️</a> 
+    <a onclick="t_add('♻️')">♻️</a> 
+    <a onclick="t_add('⚜️')">⚜️</a> 
+    <a onclick="t_add('©️')">©️</a> 
+    <a onclick="t_add('®️')">®️</a> 
+
+
+    <span class="title">Others</span> 
+    <a onclick="t_add('👁️‍🗨️')">👁️‍🗨️</a> 
+    <a onclick="t_add('💤')">💤</a> 
+    <a onclick="t_add('💥')">💥</a> 
+    <a onclick="t_add('💨')">💨</a> 
+    <a onclick="t_add('💫')">💫</a> 
+    <a onclick="t_add('💬')">💬</a> 
+    <a onclick="t_add('🗨️')">🗨️</a> 
+    <a onclick="t_add('🗯️')">🗯️</a> 
+    <a onclick="t_add('💭')">💭</a> 
+    <a onclick="t_add('🕳️')">🕳️</a> 
+    <a onclick="t_add('🚨')">🚨</a> 
+    <a onclick="t_add('🛑')">🛑</a> 
+    <a onclick="t_add('⭐')">⭐</a> 
+    <a onclick="t_add('🎃')">🎃</a> 
+    <a onclick="t_add('🎄')">🎄</a> 
+    <a onclick="t_add('✨')">✨</a> 
+    <a onclick="t_add('🎈')">🎈</a> 
+    <a onclick="t_add('🎉')">🎉</a> 
+    <a onclick="t_add('🎊')">🎊</a> 
+    <a onclick="t_add('🎋')">🎋</a> 
+    <a onclick="t_add('🎍')">🎍</a> 
+    <a onclick="t_add('🎎')">🎎</a> 
+    <a onclick="t_add('🎏')">🎏</a> 
+    <a onclick="t_add('🎐')">🎐</a> 
+    <a onclick="t_add('🎀')">🎀</a> 
+    <a onclick="t_add('🎁')">🎁</a> 
+    <a onclick="t_add('🃏')">🃏</a> 
+    <a onclick="t_add('🀄')">🀄</a> 
+    <a onclick="t_add('🔋')">🔋</a> 
+    <a onclick="t_add('🔌')">🔌</a> 
+    <a onclick="t_add('🔗')">🔗</a> 
+    <a onclick="t_add('📛')">📛</a> 
+    <a onclick="t_add('⭕')">⭕</a> 
+    <a onclick="t_add('✅')">✅</a> 
+    <a onclick="t_add('☑️')">☑️</a> 
+    <a onclick="t_add('✔️')">✔️</a> 
+    <a onclick="t_add('✖️')">✖️</a> 
+    <a onclick="t_add('❌')">❌</a> 
+    <a onclick="t_add('❎')">❎</a> 
+    <a onclick="t_add('➕')">➕</a> 
+    <a onclick="t_add('➖')">➖</a> 
+    <a onclick="t_add('➗')">➗</a> 
+    <a onclick="t_add('➰')">➰</a> 
+    <a onclick="t_add('➿')">➿</a> 
+    <a onclick="t_add('〽️')">〽️</a> 
+    <a onclick="t_add('✳️')">✳️</a> 
+    <a onclick="t_add('✴️')">✴️</a> 
+    <a onclick="t_add('❇️')">❇️</a> 
+    <a onclick="t_add('〰️')">〰️</a> 
+    <a onclick="t_add('🔴')">🔴</a> 
+    <a onclick="t_add('🔵')">🔵</a> 
+    <a onclick="t_add('⚪')">⚪</a> 
+    <a onclick="t_add('⚫')">⚫</a> 
+    <a onclick="t_add('⬜')">⬜</a> 
+    <a onclick="t_add('⬛')">⬛</a> 
+    <a onclick="t_add('◼️')">◼️</a> 
+    <a onclick="t_add('◻️')">◻️</a> 
+    <a onclick="t_add('◽')">◽</a> 
+    <a onclick="t_add('◾')">◾</a> 
+    <a onclick="t_add('▫️')">▫️</a> 
+    <a onclick="t_add('▪️')">▪️</a> 
+    <a onclick="t_add('🔶')">🔶</a> 
+    <a onclick="t_add('🔷')">🔷</a> 
+    <a onclick="t_add('🔸')">🔸</a> 
+    <a onclick="t_add('🔹')">🔹</a> 
+    <a onclick="t_add('🔺')">🔺</a> 
+    <a onclick="t_add('🔻')">🔻</a> 
+    <a onclick="t_add('🔘')">🔘</a> 
+    <a onclick="t_add('🔲')">🔲</a> 
+    <a onclick="t_add('🔳')">🔳</a> 
+    <a onclick="t_add('🏻')">🏻</a> 
+    <a onclick="t_add('🏼')">🏼</a> 
+    <a onclick="t_add('🏽')">🏽</a> 
+    <a onclick="t_add('🏾')">🏾</a> 
+    <a onclick="t_add('🏿')">🏿</a> 
+
+
+    <span class="title">Flags</span> 
+    <a onclick="t_add('🏁')">🏁</a> 
+    <a onclick="t_add('🚩')">🚩</a> 
+    <a onclick="t_add('🎌')">🎌</a> 
+    <a onclick="t_add('🏴')">🏴</a> 
+    <a onclick="t_add('🏳️')">🏳️</a> 
+    <a onclick="t_add('🏳️‍🌈')">🏳️‍🌈</a> 
+    <a onclick="t_add('🇦🇨')">🇦🇨</a> 
+    <a onclick="t_add('🇦🇩')">🇦🇩</a> 
+    <a onclick="t_add('🇦🇪')">🇦🇪</a> 
+    <a onclick="t_add('🇦🇫')">🇦🇫</a> 
+    <a onclick="t_add('🇦🇬')">🇦🇬</a> 
+    <a onclick="t_add('🇦🇮')">🇦🇮</a> 
+    <a onclick="t_add('🇦🇱')">🇦🇱</a> 
+    <a onclick="t_add('🇦🇲')">🇦🇲</a> 
+    <a onclick="t_add('🇦🇴')">🇦🇴</a> 
+    <a onclick="t_add('🇦🇶')">🇦🇶</a> 
+    <a onclick="t_add('🇦🇷')">🇦🇷</a> 
+    <a onclick="t_add('🇦🇸')">🇦🇸</a> 
+    <a onclick="t_add('🇦🇹')">🇦🇹</a> 
+    <a onclick="t_add('🇦🇺')">🇦🇺</a> 
+    <a onclick="t_add('🇦🇼')">🇦🇼</a> 
+    <a onclick="t_add('🇦🇽')">🇦🇽</a> 
+    <a onclick="t_add('🇦🇿')">🇦🇿</a> 
+    <a onclick="t_add('🇧🇦')">🇧🇦</a> 
+    <a onclick="t_add('🇧🇧')">🇧🇧</a> 
+    <a onclick="t_add('🇧🇩')">🇧🇩</a> 
+    <a onclick="t_add('🇧🇪')">🇧🇪</a> 
+    <a onclick="t_add('🇧🇫')">🇧🇫</a> 
+    <a onclick="t_add('🇧🇬')">🇧🇬</a> 
+    <a onclick="t_add('🇧🇭')">🇧🇭</a> 
+    <a onclick="t_add('🇧🇮')">🇧🇮</a> 
+    <a onclick="t_add('🇧🇯')">🇧🇯</a> 
+    <a onclick="t_add('🇧🇱')">🇧🇱</a> 
+    <a onclick="t_add('🇧🇲')">🇧🇲</a> 
+    <a onclick="t_add('🇧🇳')">🇧🇳</a> 
+    <a onclick="t_add('🇧🇴')">🇧🇴</a> 
+    <a onclick="t_add('🇧🇶')">🇧🇶</a> 
+    <a onclick="t_add('🇧🇷')">🇧🇷</a> 
+    <a onclick="t_add('🇧🇸')">🇧🇸</a> 
+    <a onclick="t_add('🇧🇹')">🇧🇹</a> 
+    <a onclick="t_add('🇧🇻')">🇧🇻</a> 
+    <a onclick="t_add('🇧🇼')">🇧🇼</a> 
+    <a onclick="t_add('🇧🇾')">🇧🇾</a> 
+    <a onclick="t_add('🇧🇿')">🇧🇿</a> 
+    <a onclick="t_add('🇨🇦')">🇨🇦</a> 
+    <a onclick="t_add('🇨🇨')">🇨🇨</a> 
+    <a onclick="t_add('🇨🇩')">🇨🇩</a> 
+    <a onclick="t_add('🇨🇫')">🇨🇫</a> 
+    <a onclick="t_add('🇨🇬')">🇨🇬</a> 
+    <a onclick="t_add('🇨🇭')">🇨🇭</a> 
+    <a onclick="t_add('🇨🇮')">🇨🇮</a> 
+    <a onclick="t_add('🇨🇰')">🇨🇰</a> 
+    <a onclick="t_add('🇨🇱')">🇨🇱</a> 
+    <a onclick="t_add('🇨🇲')">🇨🇲</a> 
+    <a onclick="t_add('🇨🇳')">🇨🇳</a> 
+    <a onclick="t_add('🇨🇴')">🇨🇴</a> 
+    <a onclick="t_add('🇨🇵')">🇨🇵</a> 
+    <a onclick="t_add('🇨🇷')">🇨🇷</a> 
+    <a onclick="t_add('🇨🇺')">🇨🇺</a> 
+    <a onclick="t_add('🇨🇻')">🇨🇻</a> 
+    <a onclick="t_add('🇨🇼')">🇨🇼</a> 
+    <a onclick="t_add('🇨🇽')">🇨🇽</a> 
+    <a onclick="t_add('🇨🇾')">🇨🇾</a> 
+    <a onclick="t_add('🇨🇿')">🇨🇿</a> 
+    <a onclick="t_add('🇩🇪')">🇩🇪</a> 
+    <a onclick="t_add('🇩🇬')">🇩🇬</a> 
+    <a onclick="t_add('🇩🇯')">🇩🇯</a> 
+    <a onclick="t_add('🇩🇰')">🇩🇰</a> 
+    <a onclick="t_add('🇩🇲')">🇩🇲</a> 
+    <a onclick="t_add('🇩🇴')">🇩🇴</a> 
+    <a onclick="t_add('🇩🇿')">🇩🇿</a> 
+    <a onclick="t_add('🇪🇦')">🇪🇦</a> 
+    <a onclick="t_add('🇪🇨')">🇪🇨</a> 
+    <a onclick="t_add('🇪🇪')">🇪🇪</a> 
+    <a onclick="t_add('🇪🇬')">🇪🇬</a> 
+    <a onclick="t_add('🇪🇭')">🇪🇭</a> 
+    <a onclick="t_add('🇪🇷')">🇪🇷</a> 
+    <a onclick="t_add('🇪🇸')">🇪🇸</a> 
+    <a onclick="t_add('🇪🇹')">🇪🇹</a> 
+    <a onclick="t_add('🇪🇺')">🇪🇺</a> 
+    <a onclick="t_add('🇫🇮')">🇫🇮</a> 
+    <a onclick="t_add('🇫🇯')">🇫🇯</a> 
+    <a onclick="t_add('🇫🇰')">🇫🇰</a> 
+    <a onclick="t_add('🇫🇲')">🇫🇲</a> 
+    <a onclick="t_add('🇫🇴')">🇫🇴</a> 
+    <a onclick="t_add('🇫🇷')">🇫🇷</a> 
+    <a onclick="t_add('🇬🇦')">🇬🇦</a> 
+    <a onclick="t_add('🇬🇧')">🇬🇧</a> 
+    <a onclick="t_add('🇬🇩')">🇬🇩</a> 
+    <a onclick="t_add('🇬🇪')">🇬🇪</a> 
+    <a onclick="t_add('🇬🇫')">🇬🇫</a> 
+    <a onclick="t_add('🇬🇬')">🇬🇬</a> 
+    <a onclick="t_add('🇬🇭')">🇬🇭</a> 
+    <a onclick="t_add('🇬🇮')">🇬🇮</a> 
+    <a onclick="t_add('🇬🇱')">🇬🇱</a> 
+    <a onclick="t_add('🇬🇲')">🇬🇲</a> 
+    <a onclick="t_add('🇬🇳')">🇬🇳</a> 
+    <a onclick="t_add('🇬🇵')">🇬🇵</a> 
+    <a onclick="t_add('🇬🇶')">🇬🇶</a> 
+    <a onclick="t_add('🇬🇷')">🇬🇷</a> 
+    <a onclick="t_add('🇬🇸')">🇬🇸</a> 
+    <a onclick="t_add('🇬🇹')">🇬🇹</a> 
+    <a onclick="t_add('🇬🇺')">🇬🇺</a> 
+    <a onclick="t_add('🇬🇼')">🇬🇼</a> 
+    <a onclick="t_add('🇬🇾')">🇬🇾</a> 
+    <a onclick="t_add('🇭🇰')">🇭🇰</a> 
+    <a onclick="t_add('🇭🇲')">🇭🇲</a> 
+    <a onclick="t_add('🇭🇳')">🇭🇳</a> 
+    <a onclick="t_add('🇭🇷')">🇭🇷</a> 
+    <a onclick="t_add('🇭🇹')">🇭🇹</a> 
+    <a onclick="t_add('🇭🇺')">🇭🇺</a> 
+    <a onclick="t_add('🇮🇨')">🇮🇨</a> 
+    <a onclick="t_add('🇮🇩')">🇮🇩</a> 
+    <a onclick="t_add('🇮🇪')">🇮🇪</a> 
+    <a onclick="t_add('🇮🇱')">🇮🇱</a> 
+    <a onclick="t_add('🇮🇲')">🇮🇲</a> 
+    <a onclick="t_add('🇮🇳')">🇮🇳</a> 
+    <a onclick="t_add('🇮🇴')">🇮🇴</a> 
+    <a onclick="t_add('🇮🇶')">🇮🇶</a> 
+    <a onclick="t_add('🇮🇷')">🇮🇷</a> 
+    <a onclick="t_add('🇮🇸')">🇮🇸</a> 
+    <a onclick="t_add('🇮🇹')">🇮🇹</a> 
+    <a onclick="t_add('🇯🇪')">🇯🇪</a> 
+    <a onclick="t_add('🇯🇲')">🇯🇲</a> 
+    <a onclick="t_add('🇯🇴')">🇯🇴</a> 
+    <a onclick="t_add('🇯🇵')">🇯🇵</a> 
+    <a onclick="t_add('🇰🇪')">🇰🇪</a> 
+    <a onclick="t_add('🇰🇬')">🇰🇬</a> 
+    <a onclick="t_add('🇰🇭')">🇰🇭</a> 
+    <a onclick="t_add('🇰🇮')">🇰🇮</a> 
+    <a onclick="t_add('🇰🇲')">🇰🇲</a> 
+    <a onclick="t_add('🇰🇳')">🇰🇳</a> 
+    <a onclick="t_add('🇰🇵')">🇰🇵</a> 
+    <a onclick="t_add('🇰🇷')">🇰🇷</a> 
+    <a onclick="t_add('🇰🇼')">🇰🇼</a> 
+    <a onclick="t_add('🇰🇾')">🇰🇾</a> 
+    <a onclick="t_add('🇰🇿')">🇰🇿</a> 
+    <a onclick="t_add('🇱🇦')">🇱🇦</a> 
+    <a onclick="t_add('🇱🇧')">🇱🇧</a> 
+    <a onclick="t_add('🇱🇨')">🇱🇨</a> 
+    <a onclick="t_add('🇱🇮')">🇱🇮</a> 
+    <a onclick="t_add('🇱🇰')">🇱🇰</a> 
+    <a onclick="t_add('🇱🇷')">🇱🇷</a> 
+    <a onclick="t_add('🇱🇸')">🇱🇸</a> 
+    <a onclick="t_add('🇱🇹')">🇱🇹</a> 
+    <a onclick="t_add('🇱🇺')">🇱🇺</a> 
+    <a onclick="t_add('🇱🇻')">🇱🇻</a> 
+    <a onclick="t_add('🇱🇾')">🇱🇾</a> 
+    <a onclick="t_add('🇲🇦')">🇲🇦</a> 
+    <a onclick="t_add('🇲🇨')">🇲🇨</a> 
+    <a onclick="t_add('🇲🇩')">🇲🇩</a> 
+    <a onclick="t_add('🇲🇪')">🇲🇪</a> 
+    <a onclick="t_add('🇲🇫')">🇲🇫</a> 
+    <a onclick="t_add('🇲🇬')">🇲🇬</a> 
+    <a onclick="t_add('🇲🇭')">🇲🇭</a> 
+    <a onclick="t_add('🇲🇰')">🇲🇰</a> 
+    <a onclick="t_add('🇲🇱')">🇲🇱</a> 
+    <a onclick="t_add('🇲🇲')">🇲🇲</a> 
+    <a onclick="t_add('🇲🇳')">🇲🇳</a> 
+    <a onclick="t_add('🇲🇴')">🇲🇴</a> 
+    <a onclick="t_add('🇲🇵')">🇲🇵</a> 
+    <a onclick="t_add('🇲🇶')">🇲🇶</a> 
+    <a onclick="t_add('🇲🇷')">🇲🇷</a> 
+    <a onclick="t_add('🇲🇸')">🇲🇸</a> 
+    <a onclick="t_add('🇲🇹')">🇲🇹</a> 
+    <a onclick="t_add('🇲🇺')">🇲🇺</a> 
+    <a onclick="t_add('🇲🇻')">🇲🇻</a> 
+    <a onclick="t_add('🇲🇼')">🇲🇼</a> 
+    <a onclick="t_add('🇲🇽')">🇲🇽</a> 
+    <a onclick="t_add('🇲🇾')">🇲🇾</a> 
+    <a onclick="t_add('🇲🇿')">🇲🇿</a> 
+    <a onclick="t_add('🇳🇦')">🇳🇦</a> 
+    <a onclick="t_add('🇳🇨')">🇳🇨</a> 
+    <a onclick="t_add('🇳🇪')">🇳🇪</a> 
+    <a onclick="t_add('🇳🇫')">🇳🇫</a> 
+    <a onclick="t_add('🇳🇬')">🇳🇬</a> 
+    <a onclick="t_add('🇳🇮')">🇳🇮</a> 
+    <a onclick="t_add('🇳🇱')">🇳🇱</a> 
+    <a onclick="t_add('🇳🇴')">🇳🇴</a> 
+    <a onclick="t_add('🇳🇵')">🇳🇵</a> 
+    <a onclick="t_add('🇳🇷')">🇳🇷</a> 
+    <a onclick="t_add('🇳🇺')">🇳🇺</a> 
+    <a onclick="t_add('🇳🇿')">🇳🇿</a> 
+    <a onclick="t_add('🇴🇲')">🇴🇲</a> 
+    <a onclick="t_add('🇵🇦')">🇵🇦</a> 
+    <a onclick="t_add('🇵🇪')">🇵🇪</a> 
+    <a onclick="t_add('🇵🇫')">🇵🇫</a> 
+    <a onclick="t_add('🇵🇬')">🇵🇬</a> 
+    <a onclick="t_add('🇵🇭')">🇵🇭</a> 
+    <a onclick="t_add('🇵🇰')">🇵🇰</a> 
+    <a onclick="t_add('🇵🇱')">🇵🇱</a> 
+    <a onclick="t_add('🇵🇲')">🇵🇲</a> 
+    <a onclick="t_add('🇵🇳')">🇵🇳</a> 
+    <a onclick="t_add('🇵🇷')">🇵🇷</a> 
+    <a onclick="t_add('🇵🇸')">🇵🇸</a> 
+    <a onclick="t_add('🇵🇹')">🇵🇹</a> 
+    <a onclick="t_add('🇵🇼')">🇵🇼</a> 
+    <a onclick="t_add('🇵🇾')">🇵🇾</a> 
+    <a onclick="t_add('🇶🇦')">🇶🇦</a> 
+    <a onclick="t_add('🇷🇪')">🇷🇪</a> 
+    <a onclick="t_add('🇷🇴')">🇷🇴</a> 
+    <a onclick="t_add('🇷🇸')">🇷🇸</a> 
+    <a onclick="t_add('🇷🇺')">🇷🇺</a> 
+    <a onclick="t_add('🇷🇼')">🇷🇼</a> 
+    <a onclick="t_add('🇸🇦')">🇸🇦</a> 
+    <a onclick="t_add('🇸🇧')">🇸🇧</a> 
+    <a onclick="t_add('🇸🇨')">🇸🇨</a> 
+    <a onclick="t_add('🇸🇩')">🇸🇩</a> 
+    <a onclick="t_add('🇸🇪')">🇸🇪</a> 
+    <a onclick="t_add('🇸🇬')">🇸🇬</a> 
+    <a onclick="t_add('🇸🇭')">🇸🇭</a> 
+    <a onclick="t_add('🇸🇮')">🇸🇮</a> 
+    <a onclick="t_add('🇸🇯')">🇸🇯</a> 
+    <a onclick="t_add('🇸🇰')">🇸🇰</a> 
+    <a onclick="t_add('🇸🇱')">🇸🇱</a> 
+    <a onclick="t_add('🇸🇲')">🇸🇲</a> 
+    <a onclick="t_add('🇸🇳')">🇸🇳</a> 
+    <a onclick="t_add('🇸🇴')">🇸🇴</a> 
+    <a onclick="t_add('🇸🇷')">🇸🇷</a> 
+    <a onclick="t_add('🇸🇸')">🇸🇸</a> 
+    <a onclick="t_add('🇸🇹')">🇸🇹</a> 
+    <a onclick="t_add('🇸🇻')">🇸🇻</a> 
+    <a onclick="t_add('🇸🇽')">🇸🇽</a> 
+    <a onclick="t_add('🇸🇾')">🇸🇾</a> 
+    <a onclick="t_add('🇸🇿')">🇸🇿</a> 
+    <a onclick="t_add('🇹🇦')">🇹🇦</a> 
+    <a onclick="t_add('🇹🇨')">🇹🇨</a> 
+    <a onclick="t_add('🇹🇩')">🇹🇩</a> 
+    <a onclick="t_add('🇹🇫')">🇹🇫</a> 
+    <a onclick="t_add('🇹🇬')">🇹🇬</a> 
+    <a onclick="t_add('🇹🇭')">🇹🇭</a> 
+    <a onclick="t_add('🇹🇯')">🇹🇯</a> 
+    <a onclick="t_add('🇹🇰')">🇹🇰</a> 
+    <a onclick="t_add('🇹🇱')">🇹🇱</a> 
+    <a onclick="t_add('🇹🇲')">🇹🇲</a> 
+    <a onclick="t_add('🇹🇳')">🇹🇳</a> 
+    <a onclick="t_add('🇹🇴')">🇹🇴</a> 
+    <a onclick="t_add('🇹🇷')">🇹🇷</a> 
+    <a onclick="t_add('🇹🇹')">🇹🇹</a> 
+    <a onclick="t_add('🇹🇻')">🇹🇻</a> 
+    <a onclick="t_add('🇹🇼')">🇹🇼</a> 
+    <a onclick="t_add('🇹🇿')">🇹🇿</a> 
+    <a onclick="t_add('🇺🇦')">🇺🇦</a> 
+    <a onclick="t_add('🇺🇬')">🇺🇬</a> 
+    <a onclick="t_add('🇺🇲')">🇺🇲</a> 
+    <a onclick="t_add('🇺🇳')">🇺🇳</a> 
+    <a onclick="t_add('🇺🇸')">🇺🇸</a> 
+    <a onclick="t_add('🇺🇾')">🇺🇾</a> 
+    <a onclick="t_add('🇺🇿')">🇺🇿</a> 
+    <a onclick="t_add('🇻🇦')">🇻🇦</a> 
+    <a onclick="t_add('🇻🇨')">🇻🇨</a> 
+    <a onclick="t_add('🇻🇪')">🇻🇪</a> 
+    <a onclick="t_add('🇻🇬')">🇻🇬</a> 
+    <a onclick="t_add('🇻🇮')">🇻🇮</a> 
+    <a onclick="t_add('🇻🇳')">🇻🇳</a> 
+    <a onclick="t_add('🇻🇺')">🇻🇺</a> 
+    <a onclick="t_add('🇼🇫')">🇼🇫</a> 
+    <a onclick="t_add('🇼🇸')">🇼🇸</a> 
+    <a onclick="t_add('🇽🇰')">🇽🇰</a> 
+    <a onclick="t_add('🇾🇪')">🇾🇪</a> 
+    <a onclick="t_add('🇾🇹')">🇾🇹</a> 
+    <a onclick="t_add('🇿🇦')">🇿🇦</a> 
+    <a onclick="t_add('🇿🇲')">🇿🇲</a> 
+    <a onclick="t_add('🇿🇼')">🇿🇼</a> 
+    <a onclick="t_add('🏴󠁧󠁢󠁥󠁮󠁧󠁿')">🏴󠁧󠁢󠁥󠁮󠁧󠁿</a> 
+    <a onclick="t_add('🏴󠁧󠁢󠁳󠁣󠁴󠁿')">🏴󠁧󠁢󠁳󠁣󠁴󠁿</a> 
+    <a onclick="t_add('🏴󠁧󠁢󠁷󠁬󠁳󠁿')">🏴󠁧󠁢󠁷󠁬󠁳󠁿</a></div>
+<div class="popup popup-symbol" style="display: none">
+      <a onclick="t_add('㋡')">㋡</a>
+    <a onclick="t_add('®')">®</a>
+    <a onclick="t_add('©')">©</a>
+    <a onclick="t_add('™')">™</a>
+    <a onclick="t_add('«')">«</a>
+    <a onclick="t_add('»')">»</a>
+    <a onclick="t_add('№')">№</a>
+    <a onclick="t_add('ღ')">ღ</a>
+    <a onclick="t_add('♥')">♥</a>
+    <a onclick="t_add('♡')">♡</a>
+    <a onclick="t_add('წ')">წ</a>
+    <a onclick="t_add('❤')">❤</a>
+    <a onclick="t_add('❥')">❥</a>
+    <a onclick="t_add('❣')">❣</a>
+    <a onclick="t_add('★')">★</a>
+    <a onclick="t_add('☆')">☆</a>
+    <a onclick="t_add('۝')">۝</a>
+    <a onclick="t_add('۞')">۞</a>
+    <a onclick="t_add('۩')">۩</a>
+    <a onclick="t_add('♂')">♂</a>
+    <a onclick="t_add('♀')">♀</a>
+    <a onclick="t_add('■')">■</a>
+    <a onclick="t_add('□')">□</a>
+    <a onclick="t_add('∆')">∆</a>
+    <a onclick="t_add('∇')">∇</a>
+    <a onclick="t_add('▲')">▲</a>
+    <a onclick="t_add('►')">►</a>
+    <a onclick="t_add('▼')">▼</a>
+    <a onclick="t_add('◄')">◄</a>
+    <a onclick="t_add('◣')">◣</a>
+    <a onclick="t_add('◢')">◢</a>
+    <a onclick="t_add('◤')">◤</a>
+    <a onclick="t_add('◥')">◥</a>
+    <a onclick="t_add('◆')">◆</a>
+    <a onclick="t_add('◇')">◇</a>
+    <a onclick="t_add('〓')">〓</a>
+    <a onclick="t_add('●')">●</a>
+    <a onclick="t_add('☼')">☼</a>
+    <a onclick="t_add('☀')">☀</a>
+    <a onclick="t_add('☁')">☁</a>
+    <a onclick="t_add('☂')">☂</a>
+    <a onclick="t_add('♪')">♪</a>
+    <a onclick="t_add('♫')">♫</a>
+    <a onclick="t_add('✝')">✝</a>
+    <a onclick="t_add('✪')">✪</a>
+    <a onclick="t_add('✱')">✱</a>
+    <a onclick="t_add('✿')">✿</a>
+    <a onclick="t_add('❀')">❀</a>
+    <a onclick="t_add('屮')">屮</a>
+    <a onclick="t_add('ஐ')">ஐ</a>
+    <a onclick="t_add('₪')">₪</a>
+    <a onclick="t_add('✎')">✎</a>
+    <a onclick="t_add('░')">░</a>
+    <a onclick="t_add('▒')">▒</a>
+    <a onclick="t_add('▒')">▒</a>
+    <a onclick="t_add('▓')">▓</a>
+    <a onclick="t_add('█')">█</a>
+    <a onclick="t_add('▌')">▌</a>
+    <a onclick="t_add('❘')">❘</a>
+    <a onclick="t_add('中')">中</a>
+    <a onclick="t_add('食')">食</a>
+    <a onclick="t_add('♠')">♠</a>
+    <a onclick="t_add('♣')">♣</a>
+    <a onclick="t_add('҈')">҈</a>
+    <a onclick="t_add('ஊ')">ஊ</a>
+    <a onclick="t_add('ஏ')">ஏ</a>
+    <a onclick="t_add('ｼ')">ｼ</a>
+    <a onclick="t_add('ㇱ')">ㇱ</a>
+    <a onclick="t_add('☋')">☋</a>
+    <a onclick="t_add('︵')">︵</a>
+    <a onclick="t_add('︶')">︶</a>
+    <a onclick="t_add('︽')">︽</a>
+    <a onclick="t_add('︾')">︾</a>
+    <a onclick="t_add('︿')">︿</a>
+    <a onclick="t_add('﹀')">﹀</a>
+    <a onclick="t_add('〘')">〘</a>
+    <a onclick="t_add('〙')">〙</a>
+    <a onclick="t_add('〚')">〚</a>
+    <a onclick="t_add('〛')">〛</a>
+    <a onclick="t_add('《')">《</a>
+    <a onclick="t_add('》')">》</a>
+    <a onclick="t_add('｟')">｟</a>
+    <a onclick="t_add('｠')">｠</a>
+    <a onclick="t_add('坤')">坤</a>
+    <a onclick="t_add('埉')">埉</a>
+    <a onclick="t_add('垞')">垞</a>
+    <a onclick="t_add('坊')">坊</a>
+    <a onclick="t_add('在')">在</a>
+    <a onclick="t_add('坤')">坤</a>
+    <a onclick="t_add('〩')">〩</a>
+    <a onclick="t_add('【')">【</a>
+    <a onclick="t_add('】')">】</a>
+    <a onclick="t_add('〔')">〔</a>
+    <a onclick="t_add('〕')">〕</a>
+    <a onclick="t_add('〖')">〖</a>
+    <a onclick="t_add('〗')">〗</a>
+    <a onclick="t_add('〄')">〄</a>
+    <a onclick="t_add('々')">々</a>
+    <a onclick="t_add('➨')">➨</a>
+    <a onclick="t_add('➲')">➲</a>
+    <a onclick="t_add('➜')">➜</a>
+    <a onclick="t_add('➢')">➢</a>
+    <a onclick="t_add('『')">『</a>
+    <a onclick="t_add('』')">』</a>
+    <a onclick="t_add('〠')">〠</a>
+    <a onclick="t_add('〣')">〣</a>
+    <a onclick="t_add('✽')">✽</a>
+    <a onclick="t_add('✻')">✻</a>
+    <a onclick="t_add('✸')">✸</a>
+    <a onclick="t_add('✡')">✡</a>
+    <a onclick="t_add('♞')">♞</a>
+    <a onclick="t_add('♘')">♘</a>
+    <a onclick="t_add('♜')">♜</a>
+    <a onclick="t_add('♖')">♖</a>
+    <a onclick="t_add('♛')">♛</a>
+    <a onclick="t_add('♕')">♕</a>
+    <a onclick="t_add('➀')">➀</a>
+    <a onclick="t_add('➁')">➁</a>
+    <a onclick="t_add('➂')">➂</a>
+    <a onclick="t_add('➃')">➃</a>
+    <a onclick="t_add('➄')">➄</a>
+    <a onclick="t_add('➅')">➅</a>
+    <a onclick="t_add('➆')">➆</a>
+    <a onclick="t_add('➇')">➇</a>
+    <a onclick="t_add('➈')">➈</a>
+    <a onclick="t_add('➊')">➊</a>
+    <a onclick="t_add('➋')">➋</a>
+    <a onclick="t_add('➌')">➌</a>
+    <a onclick="t_add('➍')">➍</a>
+    <a onclick="t_add('➎')">➎</a>
+    <a onclick="t_add('➏')">➏</a>
+    <a onclick="t_add('➐')">➐</a>
+    <a onclick="t_add('➑')">➑</a>
+    <a onclick="t_add('➒')">➒</a>
+    <a onclick="t_add('☺')">☺</a>
+    <a onclick="t_add('☹')">☹</a>
+    <a onclick="t_add('☃')">☃</a>
+    <a onclick="t_add('☄')">☄</a>
+    <a onclick="t_add('☎')">☎</a>
+    <a onclick="t_add('☑')">☑</a>
+    <a onclick="t_add('☒')">☒</a>
+    <a onclick="t_add('☠')">☠</a>
+    <a onclick="t_add('☢')">☢</a>
+    <a onclick="t_add('☣')">☣</a>
+    <a onclick="t_add('☨')">☨</a>
+    <a onclick="t_add('☩')">☩</a>
+    <a onclick="t_add('☪')">☪</a>
+    <a onclick="t_add('☫')">☫</a>
+    <a onclick="t_add('☬')">☬</a>
+    <a onclick="t_add('☭')">☭</a>
+    <a onclick="t_add('☮')">☮</a>
+    <a onclick="t_add('☯')">☯</a>
+    <a onclick="t_add('✓')">✓</a>
+    <a onclick="t_add('✔')">✔</a>
+    <a onclick="t_add('✖')">✖</a>
+    <a onclick="t_add('✗')">✗</a>
+    <a onclick="t_add('✜')">✜</a>
+    <a onclick="t_add('✝')">✝</a>
+    <a onclick="t_add('✡')">✡</a>
+    <a onclick="t_add('✪')">✪</a>
+    <a onclick="t_add('✯')">✯</a>
+    <a onclick="t_add('✰')">✰</a>
+    <a onclick="t_add('✱')">✱</a>
+    <a onclick="t_add('✲')">✲</a>
+    <a onclick="t_add('✴')">✴</a>
+    <a onclick="t_add('✵')">✵</a>
+    <a onclick="t_add('✶')">✶</a>
+    <a onclick="t_add('✻')">✻</a>
+    <a onclick="t_add('✼')">✼</a>
+    <a onclick="t_add('✽')">✽</a>
+    <a onclick="t_add('✾')">✾</a>
+    <a onclick="t_add('✿')">✿</a>
+    <a onclick="t_add('❀')">❀</a>
+    <a onclick="t_add('❁')">❁</a>
+    <a onclick="t_add('❂')">❂</a>
+    <a onclick="t_add('❃')">❃</a>
+    <a onclick="t_add('❄')">❄</a>
+    <a onclick="t_add('❆')">❆</a>
+    <a onclick="t_add('❇')">❇</a>
+    <a onclick="t_add('❈')">❈</a>
+    <a onclick="t_add('❊')">❊</a>
+    <a onclick="t_add('❋')">❋</a>
+    <a onclick="t_add('❖')">❖</a>
+    <a onclick="t_add('❢')">❢</a>
+    <a onclick="t_add('❣')">❣</a>
+    <a onclick="t_add('❦')">❦</a>
+    <a onclick="t_add('ﷺ')">ﷺ</a>
+    <a onclick="t_add('ﷻ')">ﷻ</a>
+    <a onclick="t_add('ﷹ')">ﷹ</a>
+    <a onclick="t_add('ﷲ')">ﷲ</a>
+    <a onclick="t_add('இ')">இ</a>
+    <a onclick="t_add('௫')">௫</a>
+    <a onclick="t_add('న')">న</a>
+    <a onclick="t_add('ഏ')">ഏ</a>
+    <a onclick="t_add('໘')">໘</a>
+    <a onclick="t_add('჻')">჻</a>
+    <a onclick="t_add('⁂')">⁂</a>
+    <a onclick="t_add('҂')">҂</a>
+    <a onclick="t_add('৩')">৩</a>
+    <a onclick="t_add('৬')">৬</a>
+    <a onclick="t_add('ੴ')">ੴ</a>
+    <a onclick="t_add('ઈ')">ઈ</a>
+    <a onclick="t_add('ઊ')">ઊ</a>
+    <a onclick="t_add('ண')">ண</a>
+    <a onclick="t_add('ఏ')">ఏ</a>
+    <a onclick="t_add('໙')">໙</a>
+    <a onclick="t_add('‰')">‰</a>
+    <a onclick="t_add('←')">←</a>
+    <a onclick="t_add('↑')">↑</a>
+    <a onclick="t_add('→')">→</a>
+    <a onclick="t_add('↓')">↓</a>
+    <a onclick="t_add('↔')">↔</a>
+    <a onclick="t_add('↕')">↕</a>
+    <a onclick="t_add('↖')">↖</a>
+    <a onclick="t_add('↗')">↗</a>
+    <a onclick="t_add('↘')">↘</a>
+    <a onclick="t_add('↙')">↙</a>
+    <a onclick="t_add('⇄')">⇄</a>
+    <a onclick="t_add('⇅')">⇅</a>
+    <a onclick="t_add('⇆')">⇆</a>
+    <a onclick="t_add('↺')">↺</a>
+    <a onclick="t_add('↻')">↻</a>
+    <a onclick="t_add('↣')">↣</a>
+    <a onclick="t_add('↤')">↤</a>
+    <a onclick="t_add('↥')">↥</a>
+    <a onclick="t_add('↦')">↦</a>
+    <a onclick="t_add('↧')">↧</a>
+    <a onclick="t_add('↩')">↩</a>
+    <a onclick="t_add('↪')">↪</a>
+    <a onclick="t_add('↰')">↰</a>
+    <a onclick="t_add('↱')">↱</a>
+    <a onclick="t_add('↲')">↲</a>
+    <a onclick="t_add('↳')">↳</a>
+    <a onclick="t_add('↴')">↴</a>
+    <a onclick="t_add('↵')">↵</a>
+    <a onclick="t_add('♃')">♃</a>
+    <a onclick="t_add('♄')">♄</a>
+    <a onclick="t_add('♅')">♅</a>
+    <a onclick="t_add('♆')">♆</a>
+    <a onclick="t_add('♇')">♇</a></div>
+
+
+  <textarea class="in" id="intext" placeholder="Enter your text here"></textarea>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ColorPicker : http://bgrins.github.io/spectrum/ -->
+
+<div class="tabs-container minecraft">
+  <div class="tab-init">
+          <a href="#gradient" class="gradient" data-tool="gradient">Gradient</a>
+        <a href="#multicolor" class="multicolor" data-tool="multicolor">Multicolor</a>
+    <a href="#letter" class="letter" data-tool="letters">Letter mode</a>
+    <a href="#examples" class="examples" data-tool="examples">Samples</a>
+  </div>
+
+  <div class="preview-h">↓ Preview ↓</div>
+  <div class="preview" id="preview">
+    Text preview  </div>
+
+
+  <div class="tab-content">
+
+
+<div class="content" id="gradient">
+  <div class="info">Create gradient betwen 2 colors. Pick your color and copy it and paste where you want.</div>
+  <div class="content-gradient">
+    <h4>Text color:</h4>
+    <input id='gradienttext1' /> <span class="arrow">→</span>
+    <input id='gradienttext2' />
+
+    
+    <script>
+      $("#gradienttext1").spectrum({"color":"#fe3f3f","palette":[["#ffffff","#bebebe","#fe3f3f","#fe3ffe","#3f3ffe","#3ffefe","#3ffe3f","#fefe3f"],["#000000","#3f3f3f","#be0000","#be00be","#0000be","#00bebe","#00be00","#d9a334"]],"showPalette":true,"showPaletteOnly":true,"togglePaletteOnly":true,"togglePaletteMoreText":"More colors","togglePaletteLessText":"Less colors","cancelText":"Cancel","chooseText":"Choose","showInitial":true,"change":function(color) {update_color();},"hide":function(color) {update_color();}});
+      $("#gradienttext2").spectrum({"color":"#3f3ffe","palette":[["#ffffff","#bebebe","#fe3f3f","#fe3ffe","#3f3ffe","#3ffefe","#3ffe3f","#fefe3f"],["#000000","#3f3f3f","#be0000","#be00be","#0000be","#00bebe","#00be00","#d9a334"]],"showPalette":true,"showPaletteOnly":true,"allowEmpty":true,"togglePaletteOnly":true,"togglePaletteMoreText":"More colors","togglePaletteLessText":"Less colors","cancelText":"Cancel","chooseText":"Choose","showInitial":true,"change":function(color) {update_color();},"hide":function(color) {update_color();}});
+          </script>
+
+  </div>
+</div><div class="content" id="multicolor">
+  <div class="info">
+    Create a gradient with 2 colors. Choose your colors and click on the [Generate] button  </div>
+
+  <div id="multicolor_cell_template" style="display: none;">
+        <div class="color">
+      <div class="options">
+      <input class="pickcolor" />
+        <span class="option">⚙️</span>
+        <span class="remove">X</span>
+      </div>
+    </div>
+  </div>
+
+  <h4>Text color:</h4>
+
+  <div class="content-multicolor">
+    <div class="col1">
+      <span class="title">Predefined:</span>
+      <select id="multi-palette">
+        <option value="colored">Bright colors</option>
+        <option value="light">Light colours</option>
+        <option value="dark">Dark colors</option>
+        <option value="rainbow">Rainbow</option>
+        <option value="custom">Custom</option>
+      </select>
+
+      <span class="title">Alternation:</span>
+      <select id="multi-mode">
+        <option value="stretch" selected>Stretch</option>
+                  <option value="gradient">Gradient</option>
+                <option value="letter">Letters</option>
+        <option value="word">Words</option>
+      </select>
+
+      <span class="title">Order:</span>
+      <select id="multi-order">
+        <option value="+" selected>Ascending</option>
+        <option value="-">Descending</option>
+        <option value="r">Random</option>
+      </select>
+    </div>
+    <div class="col2">
+      <span class="title">Color list:</span>
+
+      <div class="colorlist sortable" id="sortable-multi">
+              </div>
+
+      <div class="more"><span>+</span> ADD</div>
+
+
+    </div>
+  </div>
+
+  <div class="help" style="margin-top: 0px;">💡 You can drag / drop the colors to change the order.
+</div>
+
+  
+
+  <script>
+    var color_picker_options = {"color":"#000","palette":[["#ffffff","#bebebe","#fe3f3f","#fe3ffe","#3f3ffe","#3ffefe","#3ffe3f","#fefe3f"],["#000000","#3f3f3f","#be0000","#be00be","#0000be","#00bebe","#00be00","#d9a334"]],"showPalette":true,"showPaletteOnly":true,"togglePaletteOnly":true,"togglePaletteMoreText":"More colors","togglePaletteLessText":"Less colors","cancelText":"Cancel","chooseText":"Choose","showInitial":true,"change":function(color) {update_color();},"hide":function(color) {update_color();}};
+
+    var lang_textcolor = 'Couleur du texte :';
+    var lang_backcolor = 'Couleur du fond :';
+
+    var color_palettes = {
+      'colored': [ // Couleurs vives
+        '#fe3f3f',
+        '#fefe3f',
+        '#3ffe3f',
+        '#3f3ffe',
+      ],
+      'light': [ // Couleurs claires
+        '#fe3f3f',
+        '#fe3ffe',
+        '#3f3ffe',
+        '#3ffe3f',
+        '#3ffefe',
+        '#fefe3f',
+      ],
+      'dark': [ // Couleurs sombres
+        '#be0000',
+        '#be00be',
+        '#0000be',
+        '#00bebe',
+        '#00be00',
+        '#d9a334',
+      ],
+      'rainbow': [ // Couleurs arc-en-ciel
+        '#fefe3f',
+        '#d9a334',
+        '#fe3f3f',
+        '#fe3ffe',
+        '#be00be',
+        '#3f3ffe',
+        '#00bebe',
+        '#3ffefe',
+        '#3ffe3f',
+      ]
+    };
+
+    $(function() {
+      multi_add_color('#fe3f3f');
+      multi_add_color('#fefe3f');
+      multi_add_color('#3ffe3f');
+      multi_add_color('#3f3ffe');
+
+      multi_add_color('#ffffff', 'bg');
+    });
+  </script>
+
+
+</div>
+
+<div class="content" id="letter">
+  <div class="info">
+    Personalize each letter individually for unique effects!  </div>
+  <div class="content-letter">
+    
+    <div class="left">
+      <span class="title title1">Customize letters:</span>
+      <div class="add-letter">
+      <div class="select-editable">
+        <select onchange="this.nextElementSibling.value=this.value">
+          <option value=""></option>
+          <option value="abcdefghijklmnopqrstuvwxyz">abcdefghijklmnopqrstuvwxyz</option>
+          <option value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">ABCDEFGHIJKLMNOPQRSTUVWXYZ</option>
+          <option value="aeiouyAEIOUY">aeiouyAEIOUY</option>
+          <option value="bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ">bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ</option>
+        </select>
+        <input type="text" name="format" id="letters_text" value="" />
+      </div>
+
+      <span class="title">Text color:</span><br> <input type='text' id="letters_fgcolor" /><br>
+            <div class="format">
+        <label><input type="checkbox" id="letters_bold">Bold</label>
+                  <label><input type="checkbox" id="letters_underline">Underline</label>
+                          <label><input type="checkbox" id="letters_italic">Italic</label>
+                
+      </div>
+       <button class="button-add-one-letter">Add this letter →</button>
+      </div>
+    </div>
+
+    <div id="letters_cell_template" style="display: none;">
+            <div class="letters" data-fgcolor="#000000" data-bgcolor="" data-is_bold="0" data-is_italic="0" data-is_underline="0" data-is_strike="0" data-text="">
+        <span class="remove">X</span>
+        <span class="letters-zone"></span>
+      </div>
+    </div>
+
+    <div class="letters-list">
+      <span class="title title1">Letters list:</span>
+      <div class="letters-config sortable" id="sortable-letters">
+              </div>
+    </div>
+
+  </div>
+
+  <div class="help" style="margin-top: 25px;">💡 You can drag / drop the letters to change priority. </div>
+
+</div>
+
+
+
+<script>
+  var all_letters_display = "[All letters]";
+  $(document).ready(function() {
+    $("#letters_fgcolor").spectrum({"color":"#000000","palette":[["#ffffff","#bebebe","#fe3f3f","#fe3ffe","#3f3ffe","#3ffefe","#3ffe3f","#fefe3f"],["#000000","#3f3f3f","#be0000","#be00be","#0000be","#00bebe","#00be00","#d9a334"]],"showPalette":true,"showPaletteOnly":true,"allowEmpty":true,"togglePaletteOnly":true,"togglePaletteMoreText":"More colors","togglePaletteLessText":"Less colors","cancelText":"Cancel","chooseText":"Choose","showInitial":true,"change":function(color) {update_color();},"hide":function(color) {update_color();}});
+    $("#letters_bgcolor").spectrum({"palette":[["#ffffff","#bebebe","#fe3f3f","#fe3ffe","#3f3ffe","#3ffefe","#3ffe3f","#fefe3f"],["#000000","#3f3f3f","#be0000","#be00be","#0000be","#00bebe","#00be00","#d9a334"]],"showPalette":true,"showPaletteOnly":true,"allowEmpty":true,"togglePaletteOnly":true,"togglePaletteMoreText":"More colors","togglePaletteLessText":"Less colors","cancelText":"Cancel","chooseText":"Choose","showInitial":true,"change":function(color) {update_color();},"hide":function(color) {update_color();}});
+
+    letter_add_style('a', '#3f3ffe', null, false, false, false, false);
+    letter_add_style('e', '#fe3ffe', null, false, false, false, false);
+    letter_add_style('i', '#fe3f3f', null, false, false, false, false);
+    letter_add_style('o', '#00be00', null, false, false, false, false);
+    letter_add_style('u', '#d9a334', null, false, false, false, false);
+    letter_add_style('y', '#00bebe', null, false, false, false, false);
+          letter_add_style('A', '#3f3ffe', null, true, false, false, false);
+      letter_add_style('E', '#fe3ffe', null, true, false, false, false);
+      letter_add_style('I', '#fe3f3f', null, true, false, false, false);
+      letter_add_style('O', '#00be00', null, true, false, false, false);
+      letter_add_style('U', '#d9a334', null, true, false, false, false);
+      letter_add_style('Y', '#00bebe', null, true, false, false, false);
+      letter_add_style('ABCDEFGHIJKLMNOPQRSTUVWXYZ', null, null, true, false, false, false);
+    
+    letter_add_style('', null, null, false, false, false, false);
+  });
+</script>
+<div class="content examples" id="examples">
+  <div class="info">
+    In need of inspiration? Choose one of our models, click on it then click on the [Generate] button to obtain the code to copy paste where you want ;-)  </div>
+  <div class="example-full-list">
+
+
+  </div>
+</div>
+
+<script>
+  var examples_default_value = "Mon texte";
+  //examples_default_value = "Générateur buggé, ne pas recup les décos importées";
+
+  var converter_background_mode = 1;
+  var converter_can_custom_color = true;
+  var converter_can_italic = true;
+  var converter_can_underline = true;
+  var converter_can_strike = false;
+</script>
+
+<script src="js/min-e3e3a6ccc3bb.js?1618321358"></script>
+
+  </div>
+</div>
+
+
+ 
+
+<div id="result" style="display: none;">
+  <div class="result-h">↓ Copy &amp; Paste this code ↓</div>
+  <code class="hljs" style="word-wrap: break-word; white-space: pre-wrap;"></code>
+  <div class="copied" id="copied" style="display: none;">Copied in clipboard !</div>
+  <button class="copy-button" id="copy">✂️ Copy the code</button>
+</div>
+
+<textarea id="result-raw" style="display: none;"></textarea>
+
+
+
+<script src='js/min-168726dbe96b.js?1593840010'></script>
+<script src='ajax/min-eef0161cae89.js?1593875597'></script>
+<script src="js/min-475b9e276fe3.js?1593830756"></script>
+<script src="js/highlight.pack.js"></script>
+
+<script>var cookies_consent_language='en';</script><script src="js/min-06103035b7ee.js?1618321358"></script>
+<link rel="stylesheet" type="text/css" href="css/min-84e5701c8d60.css?1618320285" /><footer> <a href="#">Colorize FUN</a> 〜 <a class="cookie_setting_link" onclick="cc.showSettings();">Cookies settings</a> 〜 Contact
+</footer>
+
 </body>
-</html>    
+</html>
