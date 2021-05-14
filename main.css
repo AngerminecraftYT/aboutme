@@ -79,45 +79,7 @@
   .container.dark p{
       border: 2px solid rgb(98,98,98);
   }
- 
-a {
-    padding: 20px 30px;
-    line-height:30px;
-    color:#fff;
-    font-size: 20px;
-    background:#4b37a3;
-    text-decoration: none;
-    position: relative;
-    transition: all ease .6s;
-    overflow:hidden;
-    display: inline-block;
-    }
-    
-    a span {
-    z-index:1;
-    position:relative;
-    }
-    a:after {
-    transform: scale(0);
-    background: rgba(146, 146, 146, 0.616);
-    position: absolute;
-    right:-200px;
-    bottom:-200px;
-    content:'';
-    border-radius: 100%;
-    transition: all ease .6s;
-    width: 400px;
-    height: 400px;
-    }
-    
-    a:hover:after {
-      transform:scale(1);
-      transition: all ease .6s;
-    }
-    element.style {
-        width: 100%;
-        height: 100%;
-    }
+
     html {
         width: 100%;
         height: 100%;
@@ -125,4 +87,32 @@ a {
     body{
         width: 100%;
         height: 100%;
+    }
+    #projects.project{
+        padding: 20px 30px;
+        line-height:30px;
+        color:#fff;
+        font-size: 20px;
+        background:#4b37a3;
+        text-decoration: none;
+        position: relative;
+        transition: all ease .6s;
+        overflow:hidden;
+        display: inline-block;
+    }
+    #projects.project:after{
+        transform: scale(0);
+        background: rgba(146, 146, 146, 0.616);
+        position: absolute;
+        right:-200px;
+        bottom:-200px;
+        content:'';
+        border-radius: 100%;
+        transition: all ease .6s;
+        width: 400px;
+        height: 400px;
+    }
+    #projects.project:hover:after{
+        transform:scale(1);
+        transition: all ease .6s;
     }
