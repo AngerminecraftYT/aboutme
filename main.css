@@ -116,3 +116,9 @@
         transform:scale(1);
         transition: all ease .6s;
     }
+
+a:hover,
+a:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+}
