@@ -115,8 +115,10 @@ a {
       transition: all ease .6s;
     }
     element.style {
-        display: flex;
+        width: 100%;
+        height: 100%;
     }
     html {
-        display: flex;
+        width: 100%;
+        height: 100%;
     }
