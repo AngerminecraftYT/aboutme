@@ -31,6 +31,22 @@
         }
     </style>
 <h1>IuCC</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 <script>
 function randomtext() {
     var randomtxt = ['rofl', 'stop LOOK at this...', 'kabokm.peew best server!', 'kaboom.pw > raccoon.pw', 'sponsored by mathiascode', 'best weebsite.', 'powered by 2b2t', 'bro im so cool', 'fart', 'ok overcast is gamer', 'this is master coding skills', 'hrello', 'this is random text so refresh to see new', 'sponored by NORDVPN', 'lets make kabom.epwew SMP!!!'];
