@@ -114,3 +114,9 @@ a {
       transform:scale(1);
       transition: all ease .6s;
     }
+    element.style {
+        display: flex;
+    }
+    html {
+        display: flex;
+    }
