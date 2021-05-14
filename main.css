@@ -126,7 +126,7 @@ a {
     line-height:30px;
     color:#fff;
     font-size: 20px;
-    background:#ff0000;
+    background:#4b37a3;
     text-decoration: none;
     position: relative;
     transition: all ease .6s;
@@ -140,7 +140,7 @@ a {
     }
     a:after {
     transform: scale(0);
-    background: #000;
+    background: rgba(146, 146, 146, 0.616);
     position: absolute;
     right:-200px;
     bottom:-200px;
