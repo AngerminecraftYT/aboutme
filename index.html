@@ -1,102 +1,31 @@
 <!DOCTYPE html>
 <html>
-    
-    <meta content="IuCC" property="og:title">
-    <meta content="IuCC's official website" property="og:description">
-    <meta content="http://iucc.ml/" property="og:url">
-    <meta content="https://www.mc-heads.net/body/341a330a05e74cfdb664d015e50973a0/128.png" property="og:image">
-    <meta content="#43B581" data-react-helmet="true" name="theme-color">
-<head>
-    <title>IuCC</title>
-<body>
-    <style>
-        html {
-            scroll-behavior: smooth;
-            text-align: center;
-        }
-        body{
-            background-color: darkslategrey;
-            font-family: system-ui;
-            text-align: center;
-        }
-        h1{
-            color: floralwhite;
-            font-family: system-ui;
-            text-align: center;
-        }
-        p{
-            color: floralwhite;
-            font-family: system-ui;
-            text-align: center;
-        }
-    </style>
-<h1>IuCC</h1>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-<script>
-function randomtext() {
-    var randomtxt = ['rofl', 'stop LOOK at this...', 'kabokm.peew best server!', 'kaboom.pw > raccoon.pw', 'sponsored by mathiascode', 'best weebsite.', 'powered by 2b2t', 'bro im so cool', 'fart', 'ok overcast is gamer', 'this is master coding skills', 'hrello', 'this is random text so refresh to see new', 'sponored by NORDVPN', 'lets make kabom.epwew SMP!!!'];
-    return randomtxt[Math.floor(Math.random()*randomtxt.length)];
-}
-document.getElementById('random').value = randomtext[Math.floor(Math.random()*randomtext.length)];
-</script>
-<script>
-    var randomtxt = ['rofl', 'stop LOOK at this...', 'kabokm.peew best server!', 'kaboom.pw > raccoon.pw', 'sponsored by mathiascode', 'best weebsite.', 'powered by 2b2t', 'bro im so cool', 'fart', 'ok overcast is gamer', 'this is master coding skills', 'hrello', 'this is random text so refresh to see new', 'sponored by NORDVPN', 'lets make kabom.epwew SMP!!!'];
-    var message = randomtxt[Math.floor(Math.random()*randomtxt.length)];
-    $('input').val(message);
-</script>
-<input type="text" id="random">
-<button onclick="window.location.href='fart.html';">fart</button>
-<button onclick="window.location.href='midi.html';">midi list</button>
-<button onclick="window.location.href='bobux.html';">free robux</button>
-<button onclick="window.location.href='kaboomowner.html';">kaboom free owner!</button>
-<br>
-<h1>my bots:</h1>
-<p>uselessbot</p>
-<p>lunar</p>
-<p>terminal</p>
-<br>
-<a href="https://info.flagcounter.com/dndM"><img src="https://s11.flagcounter.com/map/dndM/size_m/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="flag counter" border="0"></a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>free to use - URL: https://github.com/IuCC123/IuCC123.github.io</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IuCC - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/836a943e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="checkbox" class="checkbox" />
+      <label for="checkbox" class="toggle-theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </label>
+      <p>
+        Welcome to IuCC.ml!
+      </p>
+      <p>
+        I will be showing my projects on this website, this website was used to be about kaboom.pw but I have quit and changed topic of the website.
+      </p>
+    </div>
+    <a href="https://info.flagcounter.com/dndM"><img src="https://s11.flagcounter.com/map/dndM/size_m/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="flag counter" border="0"></a>
+  </body>
 </html>
