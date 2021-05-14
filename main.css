@@ -129,6 +129,6 @@ p:focus {
 }
 label:hover,
 label:focus {
-    transform:scale(1);
+    transform:scale(1); 
     transition: all ease .6s;
 }
