@@ -1,57 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  padding: 25px;
-  background-color: rgb(199, 199, 199);
-  color: black;
-  font-size: 25px;
-}
-
-.dark-mode {
-  background-color: rgb(48, 48, 48);
-  color: white;
-}
-.css-selector {
-    background: linear-gradient(295deg, #00fdff, #008cff);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 0s ease infinite;
-    -moz-animation: AnimationName 0s ease infinite;
-    animation: AnimationName 0s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-</style>
-</head>
-<body>
-
-<h2>Toggle Dark/Light Mode</h2>
-<p>Click the button to toggle between dark and light mode for this page.</p>
-
-<button onclick="myFunction()">Toggle dark mode</button>
-<video controls="" autoplay="" name="media"><source src="https://media.tenor.co/videos/44501cbc06861a61bc2635cb7c671a40/mp4" type="video/mp4"></video>
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dark & Light UI Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/836a943e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="checkbox" class="checkbox" />
+      <label for="checkbox" class="toggle-theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </label>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita
+        nam recusandae tempora similique voluptatum neque reiciendis excepturi
+        eius tenetur reprehenderit distinctio commodi perferendis, ex voluptates
+        sint porro fugit adipisci.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita
+        nam recusandae tempora similique voluptatum neque reiciendis excepturi
+        eius tenetur reprehenderit distinctio commodi perferendis, ex voluptates
+        sint porro fugit adipisci.
+      </p>
+    </div>
+  </body>
 </html>
