@@ -1,0 +1,1 @@
+jQuery.scrollspeed(100,800);
