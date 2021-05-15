@@ -115,15 +115,12 @@
 a:hover,
 a:focus {
     transform:scale(1);
-    transform: translateX(50px);
 }
 p:hover,
 p:focus {
     transform:scale(1);
-    transform: translateX(50px);
 }
 label:hover,
 label:focus {
     transform:scale(1); 
-    transform: translateX(50px);
 }
