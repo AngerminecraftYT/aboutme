@@ -1,26 +1,43 @@
 <?php
-$sharexdir = "";
-$domain_url = "https://iucc.ml/img/"
-$lengthofstring = 10;
+$secret_key = "IUCCCOOL20212-012391221390232084327543RIFREHNRIUFHUIFYHE45RRT78Y43EYHT78FY4RY43E78TY4H87THY4THUJN"; //Set this as your secret key, to prevent others uploading to your server.
+$sharexdir = "img/"; //This is your file dir, also the link..
+$domain_url = 'https://iucc.ml/img/'; //Add an S at the end of HTTP if you have a SSL certificate.
+$lengthofstring = 5; //Length of the file name
 
 function RandomString($length) {
-    $keys = array_merge(range(0, 9), range('a', 'z'));
+    $keys = array_merge(range(0,9), range('a', 'z'));
+
     $key = '';
-    for($i=0; $i < length; $i++) {
+    for($i=0; $i < $length; $i++) {
         $key .= $keys[mt_rand(0, count($keys) - 1)];
     }
     return $key;
 }
-$filename = RandomString($lengthofstring);
-$target_file = $_FILES["sharex"]["name"];
-$fileType = pathinfo($target_file, PATHINFO_EXTENTION);
 
-if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
+if(isset($_POST['secret']))
 {
-    echo $domain_url.$sharexdir.$filename.'.'.$fileType;
+    if($_POST['secret'] == $secret_key)
+    {
+        $filename = RandomString($lengthofstring);
+        $target_file = $_FILES["sharex"]["name"];
+        $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
+
+        if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
+        {
+            echo $domain_url.$sharexdir.$filename.'.'.$fileType;
+        }
+            else
+        {
+           echo 'File upload failed - CHMOD/Folder doesn\'t exist?';
+        }
+    }
+    else
+    {
+        echo 'Invalid Secret Key';
+    }
 }
 else
 {
-    echo 'File upload  fialed - CHMOD/Folder doesn\'t exist?'
+    echo 'No post data recieved';
 }
 ?>
