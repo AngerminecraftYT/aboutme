@@ -5,6 +5,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#betanote").alert('close');
+    });
+});  
+</script>
+
 </head>
 <body>
   <style>
@@ -20,6 +28,10 @@
     }
   </style>
   <center>
+    <div id="betanote" class="alert alert-warning alert-dismissible fade show">
+    <strong>Please note!</strong> The website is still in beta and is not completely done yet.
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
     <h1>IuCC</h1>
     <p3>Hello! I am IuCC. You can pronnounce my name as "luck" I like coding with NodeJS and ubuntu based systems.</p3>
     <br>
@@ -34,12 +46,4 @@
       Blog
     </button>
   </center>
-  <div class="toast">
-    <div class="toast-header">
-      Toast Header
-    </div>
-    <div class="toast-body">
-      Some text inside the toast body
-    </div>
-  </div>
 </body>
