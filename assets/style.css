@@ -4,6 +4,10 @@ body{
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
+.card{
+    border-radius: 12px;
+    background-color: #0a203b;
+}
 #card{
     border-radius: 12px;
     background-color: #0a203b;
