@@ -6,12 +6,11 @@ body{
 }
 .card{
     border-radius: 12px;
-    background-color: #0a203b;
 }
 #card{
     border-radius: 12px;
-    background-color: #0a203b;
 }
 #cyclecard{
-    background-image: '/images/CycleNet.png';
+    background-image: 'https://iucc123.github.io/images/CycleNet.png';
+    width: 50%;
 }
