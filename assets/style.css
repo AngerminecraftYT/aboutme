@@ -12,3 +12,6 @@ body{
     border-radius: 12px;
     background-color: #0a203b;
 }
+#cyclecard{
+    background-image: '/images/CycleNet.png';
+}
