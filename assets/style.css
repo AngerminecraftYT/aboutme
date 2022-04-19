@@ -11,6 +11,6 @@ body{
     border-radius: 12px;
 }
 #cyclecard{
-    background: "https://iucc123.github.io/images/CycleNet.png";
+    background-image: url("https://iucc123.github.io/images/CycleNet.png");
     width: 50%;
 }
