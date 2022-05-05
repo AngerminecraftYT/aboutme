@@ -1,6 +1,6 @@
 :root {
   --color1: rgb(17, 17, 17);
-  --color2: #2b7a78;
+  --color2: #0f0f0f;
   --color3: #101010;
   --color4: #def2f1;
   --color5: #feffff;
@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
 .firstname {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--color5);
-  text-shadow: 4px 4px 5px #17252a80;
+  text-shadow: 4px 4px 5px #86868680;
   font-size: 400%;
   margin: 0;
   width: auto;
@@ -67,7 +67,7 @@ body::-webkit-scrollbar {
 .lastname {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--color1);
-  text-shadow: 3px 3px 5px #17252a70;
+  text-shadow: 3px 3px 5px #86868680;
   font-size: 400%;
   width: auto;
   margin: 0;
@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
 .titlehead {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--color5);
-  text-shadow: 4px 4px 2px #17252a80;
+  text-shadow: 4px 4px 2px #86868680;
   font-size: 300%;
   margin: 30;
   width: auto;
