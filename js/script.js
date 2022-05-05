@@ -13,12 +13,6 @@ function navscroll(button) {
 			break;
 		case "btn_myskills":
 			section = "my_skills";
-			break;
-		case "btn_work":
-			section = "work_experience";
-			break;
-		case "btn_education":
-			section = "education";
 			break;		
 		case "btn_projects":
 			section = "projects";
