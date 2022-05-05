@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IuCC</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/media-selection.js"></script>
+	<script type="text/javascript" src="js/console.js"></script>
+	<script type="text/javascript" src="js/projects/projects.js"></script>
+	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
+	<script type="text/javascript" src="js/projects/languages-field.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/cards.css">
+	<link rel="stylesheet" type="text/css" href="styles/timeline.css">
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="styles/console.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="mysidenav" class="sidenav">
+		<div id="mysidenavcontent" class="sidenavcontent">
+			<img src="https://cdn.discordapp.com/avatars/841362272139214848/c16252fd138c7395ef5e771207e68865.png?size=1024" alt="Profile picture" class="profile-picture" loading="lazy">
+			<p class="sidebarname">IuCC</p>
+			<hr>
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/IuCC123" target="_blank">
+						<img id="github" src="assets/medias/github.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to GitHub profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+			</div>
+
+			<div class="nav_btns">
+				<button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button><br>
+				<button id="btn_myskills" onClick="navscroll(this)">MY SKILLS</button><br>
+				<button id="btn_projects" onClick="navscroll(this)">PROJECTS</button><br>
+			</div>
+			
+			<div class="nav_bottom_btns">
+				<div class="column_button">
+					<button onclick="location.href='mailto:iuccmc@yandex.com'" id="btn_contactme">CONTACT ME</button>
+				</div>						
+			</div>
+
+		</div>
+	</nav>
+	<div id="mycontent" class="content">
+		<section id="about_me" class="scroll-element">
+			<div class="title">
+				<h1 class="firstname">
+					IUCC
+				</h1>
+			</div>
+			<div class="container">
+				<img id="console" class="console_img" src="assets/console.png" loading="lazy">
+				<div id="typedtext" class="typedtextclass"> </div>
+			</div>
+		</section>
+
+		<section id="my_skills" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				MY SKILLS
+			</h1>
+			<div id="skills_grid_view" class="skill-cards">
+				<div class="card">
+					<h3 class="card_title">Backend Development</h3>
+					<ul class="card_list">
+						<li>Node.JS</li>
+						<li>ExpressJS</li>
+						<li>Secure backend website management</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3 class="card_title">Frontend Development</h3>
+					<ul class="card_list">
+						<li>HTML</li>
+						<li>CSS and JS</li>
+						<li>Designing website</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3 class="card_title">C# Developer</h3>
+					<ul class="card_list">
+						<li>Application Development for Windows OS with Windows Forms</li>
+						<li>Development on CefSharp and more</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="aftertw scroll-element last-section">
+			<h1 class="titlehead">
+				PROJECTS (Work in progress)
+			</h1>
+			<input type="radio" name="slider" id="left_slider">
+			<input type="radio" name="slider" id="center_slider" checked>
+			<input type="radio" name="slider" id="right_slider">			
+			<div id="projects_view" class="projects-cards">
+				<label id="left_card" for="left_slider"  class="left_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="left_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="left_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="center_card" for="center_slider" class="center_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="center_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="center_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="right_card" for="right_slider" class="right_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="right_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="right_card_button" class="projectsbutton"></button>
+				</label>
+			</div>
+			<div id="projects_languages" class="projects-languages clearfix" loading="lazy"></div>
+		</section>
+	</div>	
+</body>
+
+</html>
