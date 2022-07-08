@@ -1,14 +1,10 @@
-var birthday = new Date('October 10, 2007 00:00:00')
-var ageDifMs = Date.now() - birthday.getTime();
-var ageDate = new Date(ageDifMs); // miliseconds from epoch
-var age = Math.abs(ageDate.getUTCFullYear() - 1970).toString();
 var finished_typing = false;
 var filled = false;
 
 // set up text to print, each item in array is new line
 var aText = new Array(
 "> Hello!", 
-"> My name is IuCC, I am " + age + " years old.", 
+"> My name is Anger!", 
 "> I love programming and challenges.",
 "> I am interested in Computer and Website Engineering.",
 "> I currently work on a lot of projects with HTML, JS, CSS and more.",
