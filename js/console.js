@@ -8,8 +8,7 @@ var aText = new Array(
 "> I love programming and challenges.",
 "> I am interested in Computer and Website Engineering.",
 "> I currently work on a lot of projects with HTML, JS, CSS and more.",
-"> If you want to know more about me, you are in the right place :)"
-"> Credits to Iucc123 on github for this awesome page :D"
+"> If you want to know more about me, you are in the right place :) credits to iucc for the page"
 );
 var iSpeed = 10; // time delay of print out
 var iIndex = 0; // start printing array at this posision
